@@ -1,0 +1,382 @@
+<!--DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+  padding-top: 5vh;
+}
+.main-nav-sticky {
+  border: 1px solid black;
+  min-width: 100vw;
+  
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 1;*/
+}
+.logo{
+  font-size: 1.5rem;
+  flex-grow: 1;
+  padding-left: 1rem;
+}
+
+.desktop-nav li{
+  display: none;
+}
+.top-container {
+  min-height: 80vh;
+  background-image: url(../images/hero-jigsaw.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-color: #ff9a24;  
+ 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  background-color: #f1f1f1;
+  min-height: 80vh;
+  padding: 30px 0;
+  text-align: center;
+}
+
+
+
+
+
+/*.fa-bars {
+  box-sizing: content-box;
+  color: #fff;
+  background-color: #2F4F4F;
+  padding: .375rem;
+  border-radius: 6px;
+  margin-right: 2rem;
+  float: right;
+}
+
+
+
+.main-nav ul{
+  display: flex;
+}
+
+.main-nav ul li {
+  padding-right: 1rem;
+}
+
+.main-nav ul li a{
+  color: #000;
+}
+
+
+
+
+.cta {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+ .ctaButtonContainer{
+ 
+  background-color: #fff;
+  padding: 3rem 0;
+}
+
+ .ctaButton{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+
+  
+  
+}
+
+.cta-button{
+  border-radius: 4px;
+  background-color: #06d6a0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.375rem;
+  text-align: center;
+  padding: .375rem;
+  
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}*/
+</style>
+<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="main-nav-sticky">
+        <div class="logo">Joshua J.Carter</div>
+          <ul class="desktop-nav">
+            <li><a href="">About</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Journal</a></li>
+            <li><a href="">Contact</a></li>   
+            <li class="hide"><a href="">Search icon</a></li>
+          </ul>
+          <a class="hamburger" href=""><i class="fas fa-bars fa-lg"></i></a>
+    </div>
+  </nav>
+
+  <div class="top-container">
+    
+    <div class="hero-banner">
+      <div class="hero-grabline">
+        <h1 class="hero-make">Make. </h1>
+        <h1 class="hero-believe"> Believe.</h1> 
+      </div>
+      <div class="hero-tagline">
+        <h3>A great website developer tagline.</h3>
+        <h3>You definitely want to hire me.</h3>
+      </div>
+        <a class="chevron" href="#tabs"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+       <div class="ctaButtonContainer">
+          <div class="ctaButton" id="cta">
+              <a class="cta-button" href="">Let's talk</a>
+              <a class="cta-button" href="">My work</a>
+          </div>
+      </div>
+    </div>
+    <div class="ctaButtonContainer">
+      <div class="ctaButton" id="cta">
+        <a class="cta-button" href="">Let's talk</a>
+        <a class="cta-button" href="">My work</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</header>
+
+<div class="content">
+  <h3>On Scroll Sticky Header</h3>
+  <p>The header will stick to the top when you reach its scroll position.</p>
+  <p>Scroll back up to remove the sticky effect.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("cta");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script> 
+
+ <script src='resources/js/main.js'></script>
+</body>
+</html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ /*----sticky header----*/
+
+header {
+  min-height: 100vh;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  height: 3rem;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #fff;
+  color: #000;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+color: #000;
+background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.header2 {
+text-align: center;
+  padding: 10px 16px;
+  background: #fff;
+  color: #000;
+}
+
+.content2 {
+  padding: 16px;
+}
+
+.sticky2 {
+text-align: center;
+background: none;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+}
+
+.sticky2 + .content {
+  padding-top: 102px;
+}
+
+/*----hero banner content----*/
+.content{
+  min-height: 80vh;
+  background-image: url(../images/hero-jigsaw.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-color: #ff9a24;  
+ 
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  background-color: #f1f1f1;
+  min-height: 80vh;
+  padding: 30px 0;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="top-container">
+  <p>&ltdiv class="top-container"&gt</p>
+</div>
+
+<div class="header" id="myHeader">
+  <h2> J. Carter</h2>
+</div>
+
+<div class="content">
+    <div class="hero-banner">
+        <div class="hero-grabline">
+          <h1 class="hero-make">Make. </h1>
+          <h1 class="hero-believe"> Believe.</h1> 
+        </div>
+        <div class="hero-tagline">
+          <h3>A great website developer tagline.</h3>
+          <h3>You definitely want to hire me.</h3>
+        </div>
+          <!--a class="chevron" href="#tabs"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+         <div class="ctaButtonContainer">
+            <div class="ctaButton" id="cta">
+                <a class="cta-button" href="">Let's talk</a>
+                <a class="cta-button" href="">My work</a>
+            </div>
+        </div-->
+    </div>
+</div>
+</header>
+  <!--h3>On Scroll Sticky Header</h3>
+  <p>The header will stick to the top when you reach its scroll position.</p>
+  <p>Scroll back up to remove the sticky effect.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p-->
+ </div> 
+   <div class="header2" id="myHeader2">
+  <h2>My Header 2</h2>
+</div>
+<div class="content2">
+  <h3>On Scroll Sticky Header</h3>
+  <p>The header will stick to the top when you reach its scroll position.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction();myFunction2()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+//window.onscroll = function() {myFunction2()};
+
+var header2 = document.getElementById("myHeader2");
+var sticky2 = header2.offsetTop;
+
+function myFunction2() {
+  if (window.pageYOffset > sticky2) {
+    header2.classList.add("sticky2");
+  } else {
+    header2.classList.remove("sticky2");
+  }
+};
+//if myHeader top is > window top 0 hide myHeaderFixed else  
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Joshua J. Carter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Syne&display=swap" rel="stylesheet">
+<!--insert favicon-->
+<link rel="icon" href="" type="image/x-icon">
+<!--link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"-->
+<!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"-->
+<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+
+	<nav class="header-nav">
+
+		<div class="sticky-nav">
+
+			<div class="top-container">
+			<!--sticky spacer-->
+			</div>
+
+			<!--add #main-nav js var header-->
+			<div class="main-nav" id="main-nav"><!--100vw padding top bottom-->
+
+				<div class="nav-bar"><!--max 1280px-->
+					<!--style this-->
+					<div class="logo">
+						<a id="home-link" href="index.html">Joshua J. Carter</a>
+					</div>
+					<div>
+						<!--add .menu-button jq $menuButton-->
+						<div class='menu-button'>
+							<i class="fas fa-bars fa-lg"></i>
+						</div>       
+					</div>
+					<div>
+						<!--add .menu-button jq $menuButton-->
+						<div class='close-menu-button hide'>
+							<i class="fas fa-times"></i>
+						</div>       
+					</div>
+				</div>	<!--nav-bar-->		
+			 
+			<!-- Nav Menu -->
+				<div class='nav-menu hide' id='nav-dropdown'>
+					<div class='container'>
+						<ul id="link-list">
+							<!--<li><a href="">About</a></li>-->
+							<li><a id="work-link" href="#work-anchor">Work</a></li>
+							<!--<li><a href="">Services</a></li>-->
+							<!--<li><a href="">Journal/News & Views</a></li>-->
+							<li><a id="contact-link" href="contact.html">Contact</a></li>   
+							<li class="hide"><a href="">Search icon</a></li>
+						</ul>
+						<ul class="contact-list">
+							<li id="lets-talk">let's talk</li>
+							<li><a href="mailto:client@joshuajcarter.com">Client enquiries<br><span>client@joshuajcarter.com</span></a></li>
+							<li><a href="mailto:enquiry@joshuajcarter.com">General enquiries<br><span>enquiry@joshuajcarter.com</span></a></li>					
+						</ul>
+
+					</div>
+
+				</div><!--.nav-menu .hide #nav-dropdown-->
+
+			</div><!--.main-nav #main-nav-->
+
+			 <div class="top-container" id="topContainer">
+			    <!--empty div sticky spacer-->
+			  </div>
+
+		</div><!--.sticky-nav-->
+
+	</nav><!--.header-nav-->
+		
+	<!--desktop nav hide
+		
+			<div class="main-nav">
+				<div class="logo">Joshua J.Carter</div>
+				<ul class="desktop-nav">
+					<li><a href="">About</a></li>
+					<li><a href="">Work</a></li>
+					<li><a href="">Journal</a></li>
+					<li><a href="">Contact</a></li>		
+					<li class="hide"><a href="">Search icon</a></li>
+				</ul>
+				<a class="hamburger" href=""><i class="fas fa-bars fa-lg"></i></a>
+			</div>
+	-->
+
+		<div class="hero-banner">
+			<div class="hero-grabline">
+				<h1 class="hero-make">Make.</h1>
+				<h1 class="hero-believe"> Believe.</h1>	
+			</div>
+			<div class="hero-tagline">
+				<h3>A great website developer tagline.<!-- The web is made for sharing Share what you've made on the web.--></h3>
+				<h3>You definitely want to hire me.<!-- I build websites you can depend/count on.--></h3>
+			</div>			
+			<a class="chevron" href="#hero-bottom"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+		</div>
+		<div id="hero-bottom"></div>
+</header>
+
+<!--main-->
+
+<main>
+
+	<!--
+		<div class="intro-header">
+			<h1 class="intro-heading">Define <span>|</span> Design <span>|</span> Develop <span>|</span> Deliver</h2>
+		</div>
+
+	-->
+
+<!--container-->
+
+	<section class="introduction section-container" ><!--100vw padding top bottom-->
+		<div class="section-content"><!--1280 width padding top bottom-->
+			<div class="section-text"><!--enable flex-->
+				<h3 class="mini-strap">Affordable quality.</h3>
+				
+					<p class="bold intro-paragraph">I take strong ideas, beautiful designs, and a rich experience and create great websites.</p>
+					<p class="hide intro-paragraph">Let me guide your project from start to finish. I can provide full support, maintain your existing websites, or develop to your own new design.</p>
+					<div class="img-container">
+						<img src="resources/images/create-be59bd-1050.jpg" alt="">
+					</div>
+					
+					<!--<div class="cta">
+						<button class="cta-button menu-button" >Let's talk</button>
+						<a class="cta-button" href="">My work</a>			
+					</div>-->
+
+					<div class="cta">
+						<button class="cta-button talk">Let's talk</button>
+						<button class="cta-button"><a href="#work-anchor">My work</a></button>			
+					</div>				
+			</div>
+			 
+			<div class="img-container-tablet">
+				<img src="resources/images/create-be59bd-w714-h1050.jpg" 
+				alt="">
+			</div>
+
+			<div class="img-container-desktop">
+				<img src="resources/images/create-be59bd-1280.jpg" 
+				alt="">
+			</div>
+		</div>
+	</section>
+
+<!--hide on mobile-->
+
+<!--	<div class="design-banner">
+			<div class="design-banner-content">
+				<div class="design-grabline">
+					<h2>Define.</h2>
+					<h2>Design.</h2>
+					<h2>Develop.</h2>
+					<h2>Deliver.</h2>	
+				</div>					
+				<div class="design-tagline">
+					<h5>This is why i am the best.</h5>
+					<h5>You definitely want to hire me.</h5>
+				</div>
+			</div>	
+		</div>
+-->
+
+<!--container to here-->
+
+
+<!--insert-->
+<!--tablet/desktop view-->
+
+<!--container-->
+
+<section class="design-process section-container"><!--width 100vw padding top bottom-->
+		
+		<div class="design-banner">
+			<div class="design-banner-content"><!--max width 1280px-->
+				<div class="design-grabline">
+					<h2>Define.</h2>
+					<h2>Design.</h2>
+					<h2>Develop.</h2>
+					<h2>Deliver.</h2>	
+				</div>					
+				<div class="design-tagline">
+					<h5>This is why i am the best.</h5>
+					<h5>You definitely want to hire me.</h5>
+				</div>
+			</div>	
+		</div>
+
+		<div class="section-content "><!--1280px-->
+
+			<div class="img-container-tablet">
+				<img src="resources/images/postcards-w714-h1050.jpg" 
+				alt="">
+			</div>
+
+			<div class="img-container-desktop">
+				<img src="resources/images/postcards-square-1050.jpg" 
+				alt="">
+			</div>
+			<div class="section-text"><!--section-text-->
+				<!--<h3 class="mini-strap">End to end support.</h3>-->
+					<div class="intro-text-flex"><!--flex-->
+						<div class="icon-heading define" >
+							<i class="far fa-comments" ></i>
+							<h2>DEFINE</h2>
+						</div>
+						<p>A website needs a strong identity and a clear message. Let's get creative and discuss what <em>your</em> website needs to succeed. </p>	
+					</div>
+					<div class="intro-text-flex">			
+					<div class="icon-heading design">
+						<i class="fas fa-icons"></i>
+						<h2>DESIGN</h2>	
+					</div>
+						<p>I'll turn your ideas, styles, media, and text into a stunning, user-friendly design that will look great on any device.</p>	
+					</div>
+					<div class="img-container design-img">
+						<img src="resources/images/postcards-w1544-h1050.jpg" 
+						alt="">
+					</div>	
+			</div>			
+		</div>
+
+		<div class="section-content margin-left"><!--1280px-->			
+			<div class="section-text">
+				<!--<h3 class="mini-strap">End to end support.</h3>-->
+					<div class="intro-text-flex">	
+						<div class="icon-heading develop">
+							<i class="fas fa-hand-sparkles"></i>
+							<h2>DEVELOP</h2>
+						</div>	
+						<p>I'll use latest web techniques for a 100% bespoke website or custom build on your preferred platform such as Wordpress.</p>
+					</div>			
+					<div class="intro-text-flex">
+						<div class="icon-heading deliver">
+							<i class="fas fa-gift"></i>
+							<h2>DELIVER</h2>
+						</div>		
+						<p>Lets bring the website to life for your audience to connect with on any device, fully tested and ready to launch. A job well done!</p>
+					</div>
+					<div class="img-container design-img">
+						<img src="resources/images/glasses-h1050.jpg" alt="">
+					</div>					
+			</div>	
+			<div class="img-container-tablet">
+				<img src="resources/images/glasses-w714-h1050.jpg" 
+				alt="">
+			</div>
+			<div class="img-container-desktop">
+				<img src="resources/images/glasses-square-1050.jpg" 
+				alt="">
+			</div>		
+		</div>
+		<div class="cta">
+			<button class="cta-button talk">Let's talk</button>
+				<!--<a class="cta-button" href="">My work</a>-->		
+		</div>
+</section>
+
+<!--container to here-->
+
+			
+<!--insert-->
+
+	<!--<div class="intro-content">background image-->
+		<!--<div class="intro-content-new">max width container-->
+				<!--<h3 class="mini-strap">End to end support.</h3>hide on desktop-->
+			<!--<div class="intro-text-new">flex-->
+				<!--<div class="intro-text-flex">flex-->
+<!--
+					<div class="icon-heading">
+						<i class="far fa-comments" ></i>
+						<h2>DEFINE</h2>
+					</div>
+					<p>Websites need a strong identity and a clear message. Let's get creative and discuss what your website needs to succeed. </p>	
+				</div>
+				<div class="intro-text-flex">			
+					<div class="icon-heading">
+						<i class="fas fa-icons"></i>
+						<h2>DESIGN</h2>	
+					</div>
+					<p>I'll turn your ideas, styles, media, and text into a stunning, user-friendly design that will look great on any device.</p>	
+				</div>
+				<div class="intro-img-container">
+					<img src="resources/images/postcards-w1544-h1050.jpg" 
+					alt="">
+				</div>			
+			</div>
+		</div>
+-->
+<!--		
+	</div>
+	<div class="intro-content">	
+-->
+
+<!--mobile view-->
+<!--
+		<div class="intro-content-new">
+			<div class="intro-text-new">
+				<div class="intro-text-flex">	
+					<div class="icon-heading">
+						<i class="fas fa-hand-sparkles"></i>
+						<h2>DEVELOP</h2>
+					</div>	
+					<p>I'll use latest web techniques for a 100% bespoke website or custom build on your preferred platform such as Wordpress.</p>
+				</div>			
+				<div class="intro-text-flex">
+					<div class="icon-heading">
+						<i class="fas fa-gift"></i>
+						<h2>DELIVER</h2>
+					</div>		
+					<p>Lets bring the website to life for your audience to connect with on any device, fully tested and ready to launch. A job well done!</p>
+				</div>			
+			</div>
+		</div>
+		<div class="intro-img-container">
+			<img src="resources/images/glasses-h1050.jpg" alt="">
+		</div>
+	</div>
+		
+-->
+<!--
+	<div class="design-banner">
+		<div class="design-banner-content">
+			<div class="design-grabline">
+				<h2>Define.</h2>
+				<h2>Design.</h2>
+				<h2>Develop.</h2>
+				<h2>Deliver.</h2>	
+			</div>					
+			<div class="design-tagline">
+				<h5>This is why i am the best.</h5>
+				<h5>You definitely want to hire me.</h5>
+			</div>
+		</div>	
+	</div>
+-->
+
+<!--container-->
+	<section class="projects-section section-container" id="work-anchor">
+		<div class="projects-container">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="projects-section-content">
+			<!--projects-section-content-->
+				
+				<div class="project-text">
+					<h3>Project title</h3>
+					<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+					<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+					<div class="cta">
+					<button><a class="projects-button-hide" href="project-template.html">View project</a></button>
+					</div>
+				</div>
+				
+				<div class="project-img">
+					<img src="resources/images/smartmockups.png" alt="">
+				</div>
+				<div class="cta">
+					<button><a class="projects-button" href="project-template.html">View project</a></button>
+				</div>
+			</div>
+		</div>	
+
+		<div class="projects-container contrast-white">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="projects-section-content">
+			<!--projects-section-content-->
+				
+				<div class="project-text">
+					<h3>Project title</h3>
+					<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+					<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+					<div class="cta">
+					<button><a class="projects-button-hide" href="project-template.html">View project</a></button>
+					</div>
+				</div>
+				
+				<div class="project-img">
+					<img src="resources/images/smartmockups.png" alt="">
+				</div>
+				<div class="cta">
+					<button><a class="projects-button" href="project-template.html">View project</a></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects-container">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="projects-section-content">
+			<!--projects-section-content-->
+				
+				<div class="project-text">
+					<h3>Project title</h3>
+					<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+					<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+					<div class="cta">
+					<button><a class="projects-button-hide" href="project-template.html">View project</a></button>
+					</div>
+				</div>
+				
+				<div class="project-img">
+					<img src="resources/images/smartmockups.png" alt="">
+				</div>
+				<div class="cta">
+					<a class="projects-button" href="project-template.html">View project</a>
+				</div>
+			</div>
+		</div>	
+
+		<div class="projects-container contrast-white">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="projects-section-content">
+			<!--projects-section-content-->
+				
+				<div class="project-text">
+					<h3>Project title</h3>
+					<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+					<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+					<div class="cta">
+						<a class="projects-button-hide" href="project-template.html">View project</a>
+					</div>
+				</div>
+				
+				<div class="project-img">
+					<img src="resources/images/smartmockups.png" alt="">
+				</div>
+				<div class="cta">
+					<a class="projects-button" href="project-template.html">View project</a>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+
+<!--<section class="projects-section-contrast">-->
+	<!--
+		<div class="section-text contrast-white">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="project-text">
+				<h3>Project title</h3>
+				<p class="project-paragraph"><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+				<p class="project-paragraph">Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+			</div>
+			<div class="project-img">
+				<img src="resources/images/smartmockups.png" alt="">
+			</div>
+			<div class="cta">
+				<a class="projects-button" href="">View project</a>
+			</div>
+		</div>
+	-->
+<!--</section>-->
+
+<!--<section class="projects-section">-->
+	<!--
+		<div class="projects-section-content">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="project-text">
+				<h3>Project title</h3>
+				<p class="project-paragraph"><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+				<p class="project-paragraph">Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+			</div>
+			<div class="project-img">
+				<img src="resources/images/smartmockups.png" alt="">
+			</div>
+			<div class="cta">
+				<a class="projects-button" href="">View project</a>
+			</div>
+		</div>
+	-->	
+<!--</section>-->
+
+<!--<section class="projects-section-contrast">-->
+	<!--
+		<div class="projects-section-content contrast-white">
+			<h3 class="mini-strap">Projects</h3>
+			<div class="project-text">
+				<h3>Project title</h3>
+				<p class="project-paragraph"><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+				<p class="project-paragraph">Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+			</div>
+			<div class="project-img">
+				<img src="resources/images/smartmockups.png" alt="">
+			</div>
+			<div class="cta">
+				<a class="projects-button" href="">View project</a>
+			</div>
+		</div>
+	-->
+<!--</section>-->
+
+	
+
+	<section class="contact-hero"  id="index">
+		<div class="contact-hero-text">
+
+			<h3>ready to talk?</h3>
+						
+			<p>Shoot me a message and I'll get right back to you.</p>
+
+			<button class=" contact-link-button" id=""><a href="contact.html">Let's talk</a></button>	
+
+			<p>My inbox is always open if you have any questions or just want to say hi.</p>
+
+		</div>		
+	</section>
+
+<!--container to here-->
+
+<!--working tabs-->
+	<!--div class="tabs tabs-top" id="tabs">
+    
+	   <div class="tab">
+	       <input type="radio" id="tab-1" name="tab-group-1" checked>
+	       <label for="tab-1"><i class="fas fa-icons fa-2x"></i><br><b>Design</b></label>
+	       
+	       <div class="content">
+	           <i class="fas fa-icons " id="bg-icon"></i>
+	           <div class="content-text">
+	           		<h3>Design<h3>
+	           		<p>Nam fringilla risus dolor, a volutpat ligula lobortis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+	           		<p>Nam fringilla risus dolor, a volutpat ligula lobortis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+	           	</div>
+	       </div> 
+	   </div>
+	    
+	   <div class="tab">
+	       <input type="radio" id="tab-2" name="tab-group-1">
+	       <label for="tab-2"><i class="fas fa-hand-sparkles fa-2x"></i><br><b>Develop</b></label>
+	       
+	       <div class="content">
+	           <i class="fas fa-hand-sparkles" id="bg-hand"></i>
+	           <div class="content-text">
+	           		<h3>Develop<h3>
+	           		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit. Nam fringilla risus dolor, a volutpat ligula lobortis vehicula.</p>
+	           		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit. Nam fringilla risus dolor, a volutpat ligula lobortis vehicula.</p>
+	           	</div>
+	       </div> 
+	   </div>
+	    
+
+	    <div class="tab">
+	       <input type="radio" id="tab-3" name="tab-group-1">
+	       <label for="tab-3"><i class="fas fa-gift fa-2x"></i><br><b>Deliver</b></label>
+	     
+	       <div class="content">
+	           <i class="fas fa-gift" id="bg-gift"></i>
+	           <div class="content-text">
+	           		<h3>Deliver<h3>
+	           		<p>Nam fringilla risus dolor, a volutpat ligula lobortis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+	           		<p>Nam fringilla risus dolor, a volutpat ligula lobortis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+	           	</div>
+	       </div> 
+	   </div>
+	    
+	</div>-->
+
+<!--end working tabs-->
+
+
+	<!--section class="services" id="intro">
+		<!<div class="services-text-container">
+			<div class="services-text">
+				<h2>This is the section headline</h2>
+				<p>This is the paragraph that says how inspired your activities are, how great my websites are and why having one made for you is a good idea.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit. Nam fringilla risus dolor, a volutpat ligula lobortis vehicula.</p>
+			</div>
+		</div>-->
+		<!--<div class="services-text-container-2">
+			<div class="services-text">
+				<h2>This is the section headline</h2>
+				<p>This is the paragraph that says how inspired your activities are, how great my websites are and why having one made for you is a good idea.</p>
+			</div>
+		</div>-->
+
+
+
+		<div class="tabs-1">
+
+			
+			
+		</div>
+
+
+		<!--div class="parent">
+
+			<ul class="tabs">
+				<li><i class="fas fa-icons fa-3x"></i><h2>DESIGN</h2></li>
+				<li><i class="fas fa-hand-sparkles fa-3x"></i><h2>DEVELOP</h2></li>
+				<li><i class="fas fa-gift fa-3x"></i><h2>DELIVER</h2></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-content-bg">
+					<i class="fas fa-icons " id="bg-icon"></i>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-content-bg">
+					<i class="fas fa-hand-sparkles" id="bg-hand"></i>
+				</div>
+			</div>
+			<div class="tab-content">
+				<div class="tab-content-bg">
+					<i class="fas fa-gift" id="bg-gift"></i>
+				</div>
+			</div>
+		</div-->
+
+
+		<!--div class="method-drop-down">
+			<div class="method-drop-down-text">
+				<i class="fas fa-icons fa-3x"></i>
+				<h2>DESIGN</h2>
+			</div>
+		</div>
+		<div class="method-container hide" id="jigsaw">
+			<div class="method-icon">
+				<div class="method-icon-container">
+					<i class="fas fa-icons fa-5x"></i>
+				</div>
+				<div class="method-icon-text">
+					<h3>Design</h3>
+					<p>Lets explore and examine what we need to bring your website to life and flourish.</p>
+				</div>
+			</div>
+		</div> 
+		<div class="method-drop-down">
+			<div class="method-drop-down-text">
+				<i class="fas fa-hand-sparkles fa-3x"></i>
+				<h2>DEVELOP</h2>
+			</div>
+		</div>
+		<div class="method-container hide" id="brushes">
+			<div class="method-icon">
+				<i class="fas fa-hand-sparkles fa-5x"></i>
+				<div class="method-icon-text">
+					<h3>Develop</h3>
+					<p>Time to create something you can get your hands on. Alakazam!</p>
+				</div>
+			</div>
+		</div>
+		<div class="method-drop-down">
+			<div class="method-drop-down-text">
+				<i class="fas fa-gift fa-3x"></i>
+				<h2>DELIVER</h2>
+			</div>
+		</div>
+		<div class="method-container hide" id="hearts">
+			<div class="method-icon">
+				<i class="fas fa-gift fa-3x"></i>
+				<div class="method-icon-text">
+					<h3>Deliver</h3>
+					<p>A beautiful, new, shiny website ready to launch to the world. Cheers!</p>
+				</div>
+			</div>
+		</div>
+	</section-->
+
+</main>
+<footer>
+	<section class="footer-content">
+		
+		<nav >
+			<ul class="footer-icon-nav">
+				<li><a title="View Facebook" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li><a title="View Twitter" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a title="View Instagram" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+			</ul>
+		</nav>
+	
+		
+		
+		<p>&copy 2021 Joshua J. Carter.  All rights reserved</p>
+		<nav >
+			<ul class="footer-nav">
+				<li><a href="index.html">home</a></li>
+				<li><a href="#work-anchor">work</a></li>
+				<li><a href="contact.html">contact</a></li>
+				<!--li><a>donate</a></li-->
+			</ul>
+		</nav>
+	</section>
+</footer>
+
+
+
+<!--include external javascript file-->
+<script type="text/javascript" src='resources/js/main.js' ></script>
+<!--reference jQuery Library-->
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script> 
+<!--include external JQuery file-->
+<script type="text/javascript" src='resources/js/jquery.js'></script>
+
+</body>
+</html>
