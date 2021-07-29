@@ -1,7 +1,7 @@
 $(document).ready( ()=> {
 	
   //Fade classes in
-  $( '.hero-make, .hero-believe' ).css( 'opacity', '1.0' );
+  $( '.hero-make, .hero-ideas, .hero-happen' ).css( 'opacity', '1.0' );
 
   // toggle nav menu dropdown
   const $menuButton = $('.menu-button');

@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-<title>Joshua J. Carter</title>
+<title>Project Template | Joshua J. Carter</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Syne&display=swap" rel="stylesheet">
-<!--insert favicon-->
-<link rel="icon" href="" type="image/x-icon">
-<!--link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"-->
-<!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"-->
+
+<!--google font-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--add #projectName-project-logo-font google fonts -->
+
+<link href="https://fonts.googleapis.com/css2?
+
+family=Quicksand:wght@300;400;500;600;700
+
+&family=Syne
+
+&display=swap"
+
+rel="stylesheet">
+
+<!--link tags from favicon.io-->
+<link rel="apple-touch-icon" sizes="180x180" href="resources/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<!--fontawesome-->
 <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -21,9 +42,11 @@
 
 		<div class="sticky-nav">
 
-			<div class="top-container">
 			<!--sticky spacer-->
+<!--
+			<div class="top-container">			
 			</div>
+-->
 
 			<!--add #main-nav js var header-->
 			<div class="main-nav" id="main-nav"><!--100vw padding top bottom-->
@@ -70,118 +93,127 @@
 
 			</div><!--.main-nav #main-nav-->
 
-			 <div class="top-container" id="topContainer">
-			    <!--empty div sticky spacer-->
-			  </div>
+			<!--empty div sticky spacer-->
+<!--
+			<div class="top-container" id="topContainer">			    
+			</div>
+-->
 
 		</div><!--.sticky-nav-->
 
 	</nav><!--.header-nav-->
+
 </header>
 
+<main>
 
-	<main>
-		<section class="project-title">
-			<!--<h3 class="mini-strap">Projects</h3>-->
-			<!--<h3>Tsunami Coffee</h3>-->
-			<div class="project-title-img-container">
-				<div class="project-logo">
-					<img  src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
-					<p><em>Great coffee does not happen by accident.</em></p>
-				</div>
-					<img id="project-imac-mockup" src="resources/images/130kb-imac-tsunami-mockup.png">
-			</div>
-			<div class="at-a-glance-bg-color">
-				<div class="at-a-glance">
-					<h4>At a glance -</h4>
-					<!--<i class="far fa-comments" id="project-icon" ></i>
-					<i class="fas fa-icons" id="project-icon"></i>
-					<i class="fas fa-hand-sparkles" id="project-icon"></i>
-					<i class="fas fa-gift" id="project-icon"></i>-->
-						<div class="at-a-glance-list">
-							<ul>
-								<li><i class="far fa-comments" id="project-icon" ></i><p>Full website re-design</p></li>
-								<li><i class="fas fa-icons" id="project-icon"></i><p>Fully responsive and social media ready.</p></li>
-								<li><i class="fas fa-hand-sparkles" id="project-icon"></i><p>Hand-built custom HTML, CSS, and Flexbox</p></li>
-								<li><i class="fas fa-gift" id="project-icon"></i><p>View live on Github pages <a href="">here</a></p></li>
-							</ul>
-						</div>
-				</div>
+	<section class="project-title projectName">
+		<!--<h3 class="mini-strap">Projects</h3>-->
+		<!--<h3>Tsunami Coffee</h3>-->
+		<div class="project-title-hero">
+			<div class="project-logo">
+				<img  src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
 
-				<!--<img src="resources/images/tsunami-home-screenshot.jpg"-->
-				
-				<img id="project-macbook-mockup" src="resources/images/tsunami-mockup-146kb.png">
-				<div class="cta">
-					<button class="cta-button talk">Let's talk</button>
-					<!--<a class="cta-button" href="">My work</a>-->		
-				</div>
+<!--alter p id and style font-->
+
+				<p id="projectName-font">Great coffee does not happen by accident.</p>
 			</div>
-		</section>
-		
-<!--
-		<section class="projects-section section-container">
-			<h3 class="mini-strap">Projects</h3>
-			<div class="project-text">
-				<h3>Tsunami Coffee</h3>
-			</div>
-			<div class="project-title-img-container">
-				<img id="project-logo" src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
 				<img id="project-imac-mockup" src="resources/images/130kb-imac-tsunami-mockup.png">
+		</div>
+		<div class="at-a-glance-bg-color">
+			<div class="at-a-glance">
+				<h4>At a glance -</h4>
+				<!--<i class="far fa-comments" id="project-icon" ></i>
+				<i class="fas fa-icons" id="project-icon"></i>
+				<i class="fas fa-hand-sparkles" id="project-icon"></i>
+				<i class="fas fa-gift" id="project-icon"></i>-->
+					<div class="at-a-glance-list">
+						<ul>
+							<li><i class="far fa-comments" id="project-icon" ></i><p>Full website re-design</p></li>
+							<li><i class="fas fa-icons" id="project-icon"></i><p>Fully responsive and social media ready.</p></li>
+							<li><i class="fas fa-hand-sparkles" id="project-icon"></i><p>Hand-built custom HTML, CSS, and Flexbox</p></li>
+							<li><i class="fas fa-gift" id="project-icon"></i><p>View live on Github pages <a target="_blank" href="https://joshuajcarter.github.io/project-tsunami-coffee/">here</a></p></li>
+						</ul>
+					</div>
 			</div>
-			<div class="project-text">
-				<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
-				<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
-			</div>
-			<div class="project-img">
-				<img src="resources/images/tsunami-mockup-146kb.png" alt="">
-			</div>
-			<div class="cta">
-				<a class="projects-button" href="">View project</a>
-			</div>			
-		</section>
--->
-		<section class="about-project">
-			<h4>About project -</h4>
-			<h3>Headline Headline</h3>
-			<div class="about-project-paragraph">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
-				<img src="resources/images/177kb-tsunami-gallery.png">
-			</div>
-			<h3>Headline Headline</h3>
-			
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
-				<img src="resources/images/130kb-imac-tsunami-mockup.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
-				
-	
-			<h3>Headline Headline</h3>
-			<div class="about-project-paragraph">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
-				<img src="resources/images/tsunami-mockup-146kb.png">
-			</div>
-			
-			<div class="cta">
-				<button class="cta-button talk" >Let's talk</button>
-				<button class="next-button"><a href="project-template.html">Next</a></button>
 
+			<!--<img src="resources/images/tsunami-home-screenshot.jpg"-->
+			
+			<img id="project-macbook-mockup" src="resources/images/tsunami-mockup-146kb.png" alt="">
+			<div class="cta">
+				<button class="cta-button talk">Let's talk</button>
 				<!--<a class="cta-button" href="">My work</a>-->		
 			</div>
-
-				
-		</section>
+		</div>
+	</section>
+	
+<!--
+	<section class="projects-section section-container">
+		<h3 class="mini-strap">Projects</h3>
+		<div class="project-text">
+			<h3>Tsunami Coffee</h3>
+		</div>
+		<div class="project-title-hero">
+			<img id="project-logo" src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
+			<img id="project-imac-mockup" src="resources/images/130kb-imac-tsunami-mockup.png">
+		</div>
+		<div class="project-text">
+			<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
+			<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
+		</div>
+		<div class="project-img">
+			<img src="resources/images/tsunami-mockup-146kb.png" alt="">
+		</div>
+		<div class="cta">
+			<a class="projects-button" href="">View project</a>
+		</div>			
+	</section>
+-->
+	<section class="about-project">
+		<h4>About project -</h4>
+		<h3>Headline Headline</h3>
+		<div class="about-project-paragraph">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
+			<img src="resources/images/177kb-tsunami-gallery.png">
+		</div>
+		<h3>Headline Headline</h3>
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
+			<img src="resources/images/130kb-imac-tsunami-mockup.png">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
 			
 
+		<h3>Headline Headline</h3>
+		<div class="about-project-paragraph" id="about-project-paragraph-last">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit quam dictum lectus blandit pretium. Mauris id consectetur est, at viverra leo. Donec nec.</p>
+			<img src="resources/images/tsunami-mockup-146kb.png" id="project-image-4">
+		</div>
+		
+		<div class="cta">
+			<button class="cta-button"><a href="contact.html">Let's talk</a></button>
+			<button class="next-button"><a href="index.html#work-anchor">Back</a></button>
+<!--
+			<button class="next-button"><a href="project-template.html">Next</a></button>
+-->		
+		</div>	
+	</section>
 
-	</main>
+</main>
 
-	<footer>
+<footer>
+
 	<section class="footer-content">
 		
 		<nav >
 			<ul class="footer-icon-nav">
+<!-- disabled socials icons
 				<li><a title="View Facebook" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
 				<li><a title="View Twitter" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter/joshuajcarter.github.io"><i class="fab fa-github-square"></i></a></li>
+-->
+<!--
 				<li><a title="View Instagram" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+-->
 			</ul>
 		</nav>
 	
@@ -196,19 +228,22 @@
 				<!--li><a>donate</a></li-->
 			</ul>
 		</nav>
+
 	</section>
+
 </footer>
 
-	<!--include external javascript file-->
-	<script type="text/javascript" src='resources/js/main.js'>></script>
-	<!--reference jQuery Library-->
-	<script
-	    src="https://code.jquery.com/jquery-3.2.1.min.js"
-	    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	    crossorigin="anonymous">
-	</script> 
-	<!--include external JQuery file-->
-	<script type="text/javascript" src='resources/js/jquery.js'></script>
+<!--include external javascript file-->
+<script type="text/javascript" src='resources/js/main.js'>></script>
+<!--reference jQuery Library-->
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script> 
+<!--include external JQuery file-->
+<script type="text/javascript" src='resources/js/jquery.js'></script>
 	
- </body>
- </html>
+</body>
+</html>
+
