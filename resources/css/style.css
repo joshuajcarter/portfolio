@@ -239,6 +239,10 @@ li#lets-talk {
 	justify-content: space-evenly;
 }
 
+.hero-grabline-landscape h1{
+	display: inline;
+}
+
 .hero-grabline{
 	text-align: left;
 }
@@ -263,7 +267,8 @@ li#lets-talk {
 	transition: opacity 2.2s ease 2.6s;
 }
 
-.hero-grabline{
+.hero-grabline-portrait,
+.hero-grabline-landscape {
 	margin: 0 auto;
 }
 
@@ -818,17 +823,56 @@ footer p,
 	margin: 0 1rem;
 }
 
+
 /*-----Media Queries-----*/
+
+/*-----aspect orientation media queries for hero-banner-----*/
+
+@media screen and (orientation: portrait) {
+	.hero-grabline-landscape {
+		display: none;
+	}
+}
+
+@media screen and (orientation: landscape) {
+	.hero-grabline-portrait {
+		display: none;
+	}
+}
+@media screen 
+and (orientation: landscape)
+and (max-width: 980px) {
+	.hero-banner {
+		padding-top: 2rem;
+	}
+	.hero-grabline-landscape h1 {
+		font-size: 4rem;
+	}
+	.hero-tagline h3 {
+		font-size: 1.5rem;
+	}
+}
+@media screen 
+and (orientation: landscape)
+and (max-width: 720px) {
+	.hero-grabline-landscape h1 {
+		font-size: 2.75rem;
+	}
+	.hero-tagline h3 {
+		font-size: 1.25rem;
+	}
+}
+
 /*-----configure mqs max-width descending value, min-width ascending value-----*/
 
 @media screen and (max-width: 480px) {
-	.hero-make, 
-	.hero-make,
-	.hero-happen{
+	h1.hero-make, 
+	h1.hero-ideas,
+	h1.hero-happen {
 		font-size: 4.5rem;
 	}
 	footer p,
-	.footer-nav li{
+	.footer-nav li {
 		font-size: .75rem;
 	}
 } 
@@ -839,10 +883,30 @@ footer p,
 	}
 }
 
+@media screen and (max-width: 414px) {
+		.hero-banner {
+		padding: 3rem 0;
+	}
+}
+
 @media screen and (max-width: 380px) {
 	footer p {
 		max-width: 60%;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.hero-banner {
+		padding: 3rem 0;
+	}
+	h1.hero-make,
+	h1.hero-ideas,
+	h1.hero-happen {
+		font-size: 3rem;
+	}
+	.hero-tagline h3 {
+		font-size: 1.5rem;
 	}
 }
 
@@ -873,17 +937,6 @@ footer p,
 	.contact-details-content p a {
 		font-size: 1.125rem;
 		max-width: 90%;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	.hero-make,
-	.hero-idea,
-	.hero-happen {
-		font-size: 3.75rem;
-	}
-	.hero-tagline h3 {
-		font-size: 1.75rem;
 	}
 }
 
@@ -927,9 +980,9 @@ footer p,
 }
 
 @media screen and (max-width: 280px) {
-	.hero-make, 
-	.hero-ideas,
-	.hero-happen {
+	h1.hero-make, 
+	h1.hero-ideas,
+	h1.hero-happen {
 		font-size: 2.75rem;
 	}
 		footer p {
