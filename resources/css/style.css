@@ -822,7 +822,9 @@ footer p,
 /*-----configure mqs max-width descending value, min-width ascending value-----*/
 
 @media screen and (max-width: 480px) {
-	.hero-make, .hero-believe{
+	.hero-make, 
+	.hero-make,
+	.hero-happen{
 		font-size: 4.5rem;
 	}
 	footer p,
@@ -875,7 +877,9 @@ footer p,
 }
 
 @media screen and (max-width: 360px) {
-	.hero-make, .hero-believe{
+	.hero-make,
+	.hero-idea,
+	.hero-happen {
 		font-size: 3.75rem;
 	}
 	.hero-tagline h3 {
@@ -923,7 +927,9 @@ footer p,
 }
 
 @media screen and (max-width: 280px) {
-	.hero-make, .hero-believe{
+	.hero-make, 
+	.hero-ideas,
+	.hero-happen {
 		font-size: 2.75rem;
 	}
 		footer p {
