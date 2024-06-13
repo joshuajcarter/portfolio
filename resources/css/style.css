@@ -91,19 +91,20 @@ button {
 	max-width: 1280px;
 	margin: 0 auto;
 }
-
+/*-----comment out empty rulesets 070123
 .section-text {
 }
-
+*/
 
 /*=====navigation=====*/
 
-
+/*
 header{	
 }
 
 .sticky-nav{
 }
+*/
 
 .top-container {
 	color: #fff;
@@ -201,9 +202,8 @@ li#lets-talk {
 /*contact page selector*/
 .contact-details h2,
 .contact-details a {
-	color: #ff9822; /*orange*/
+	color: #ff9822; 
 }
-
 .contact-list span {
 	color: #fff;	
 }
@@ -273,7 +273,7 @@ li#lets-talk {
 }
 
 .hero-tagline, .intro-paragraph, .intro-text-flex, .projects-text {
-	max-width: 66%;
+	max-width: 70%; /*-----resize max-width .hero-tagline, .intro-paragraph, .intro-text-flex, .projects-text-----*/
 	margin: 0 auto;
 }
 
@@ -299,8 +299,10 @@ li#lets-talk {
 	padding: 0rem 1rem 0rem;
 }
 
+/*
 .section-content {
 }
+*/
 
 .introduction-section-content {
 	padding-top: 2rem;
@@ -382,11 +384,11 @@ li#lets-talk {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 3rem;
+	/*padding-top: 3rem;-----remove padding-top intro-text-flex 070123*/
 }
 
 .intro-text-flex p {
-	text-align: center;
+	text-align: left; 
 }
 
 .fa-comments,
@@ -394,23 +396,27 @@ li#lets-talk {
 .fa-hand-sparkles,
 .fa-gift{
 	box-sizing: content-box;
-	color: #d2c1df;
-	font-size: 4.5rem; 
-	background-color: #ffffff;
+	color: #cdd3de;/*#d2c1df-----alter fa icon color 070123*/
+	font-size: 3.25rem; /*4.5rem-----re-size fa icon font-size 070123*/ 
+	background-color: rgba(255, 255, 255, 0);/*#ffffff-----cut 070123*/
 	border-radius: 12px;
+	margin-left: 1.5rem; /*added 070123*/
+	margin-top: -.75rem; /*added 070123*/
+	/*
 	padding: .75rem;
 	box-shadow: 0 0 10px #ddd;
+	-----remove fa icon padding add margin 070123*/
 }
 
 /*-----add border when fa font size 4.5rem-----*/
-
+/* remove border from obsolete icon design 070123
 .fa-comments {
-	border: .28125rem solid white; /*.3125rem solid white;*//*.375rem solid white;*/
+	border: .28125rem solid white; 
 }
 	
 .fa-icons,  
 .fa-gift {
-	border: 0.5625rem solid white; /*.75rem solid white;*//*.625rem solid white;*/
+	border: 0.5625rem solid white; 
 }
 
 .fa-comments,
@@ -419,10 +425,15 @@ li#lets-talk {
 	border-top: 0;
 	border-bottom: 0;		
 }
+-----*/
 
 .icon-heading {
+	display: flex; /*add flexbox to .icon-heading 070123*/
+	justify-content: center; /*added 070123*/
+    align-items: flex-end; /*added 070123*/
 }
 
+/* ----- remove minus margin from obsolete fa icon design 070123
 .define {
 	margin-left: -2.125rem;
 }
@@ -438,16 +449,18 @@ li#lets-talk {
 .deliver {
 	margin-left: -2.5rem;
 }
+*/
 
 .icon-heading h2 {
 	font-size: 2.625rem;
-	text-shadow: 0 0 5px #fff;
-	margin-left: 2.75rem;
-	margin-top: -4.625rem;
+	/*text-shadow: 0 0 5px #fff;remove properties from obsolete icon-heading h2 design 070123-----*/
+	/*margin-left: 2.75rem; cut 070123-----*/
+	/*margin-top: -3.5rem; cut 070123-----*/
 }
 
 .intro-text-flex p {
-	padding-top: 2.5rem;/*margin-top: 2rem;*/
+	margin:  1.25rem 0 2.5rem 0; /* add margin remove padding intro-text-flex p 070123 */
+	/*padding-top: 2.5rem; cut 070123*/
 }
 
 .intro-text-new p {
@@ -476,7 +489,7 @@ li#lets-talk {
 .contrast-white {
 	background-color: #fff;
 }
-.
+
 .projects-section-content {
 	max-width: 96%;
 	margin: 0 auto;
@@ -537,14 +550,18 @@ li#lets-talk {
 
 .project-title-hero {
 	max-width: 100%;
-	margin: 2rem 0;
+	/*-----add flexbox to .project-title-hero 070123-----*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
 	overflow: hidden;
 }
 
 .project-logo {
 	max-width: 40%;	
 	margin-left: 8%;
-	float: left;
+	/*float: left; remove float .project-logo 070123*/
 }
 
 .project-logo p {
@@ -559,24 +576,28 @@ li#lets-talk {
 	margin-top: 0;
 }
 
+/*
 .boothroyds-logo {
-	margin-top: 4rem;
+	margin-top: 4rem; remove margin boothroyds-logo 
 }
+*/
 
 .tsunami-logo {
 	margin-top: .5rem;
 }
 
+/*
 #projectName-font {
 	font-family: ;
 	color: ;
 	font-style: ;
 }
+*/
 
 #boothroyds-font {
 	font-family: 'Coustard', serif;
 	color: #26ADE4;
-	font-size: 1.125rem;
+	font-size: 1.25rem/*1.125rem resize #boothroyds-font 070123*/;
 }
 
 #tsunami-font {
@@ -693,8 +714,8 @@ li#lets-talk {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem 0;
-
+	margin-top: 56px;
+	padding: 4rem 0; /* resize .contact-hero padding 070123 */
 }
 
 #index{
@@ -708,7 +729,7 @@ li#lets-talk {
 .contact-hero-text h2 {
 	font-family: 'Archivo Black', sans-serif;
 	color: #ff9822;
-	font-size: 3.5rem;
+	font-size: 6rem;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 2rem 0;
@@ -781,7 +802,6 @@ footer{
 	background-color: #282828;/*#aaa;*/ /*#dbe1ed;*/
 	display: flex;
 	align-content: center;
-	justify-content: ;
 	padding: 2rem 0;
 }
 
@@ -864,7 +884,80 @@ and (max-width: 720px) {
 }
 
 /*-----configure mqs max-width descending value, min-width ascending value-----*/
+/*-----max-width - if a device is less than or equal to ..px, then do {…}-----*/
+/*-----min-width - if a device is greater than or equal to ..px, then do {…}-----*/
 
+@media screen and (max-width: 767px) {
+	.design-process {
+		padding-top: 0;
+	}
+	
+	.icon-heading {		
+		flex-direction: column-reverse;
+		align-items: center;
+		padding-top: 3rem;		
+	}
+	.fa-comments,
+	.fa-icons,
+	.fa-hand-sparkles,
+	.fa-gift{
+		font-size: 9rem; 
+		margin: 0 0 1rem 0;		
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.contact-hero-text h2 {
+		font-size: 4rem; /*-----add contact-hero-text h2 font-size for max-width: 720px-----*/
+	}
+}
+/*@media screen and (max-width: 1079px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 901px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1.625rem;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 801px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1.125rem;
+	}
+}
+@media screen and (max-width: 641px) {
+	#boothroyds-font {
+		font-family: 'Coustard', serif;
+		color: #26ADE4;
+		font-size: 1rem/;
+	}
+}
+*/
 @media screen and (max-width: 480px) {
 	h1.hero-make, 
 	h1.hero-ideas,
@@ -938,6 +1031,10 @@ and (max-width: 720px) {
 		font-size: 1.125rem;
 		max-width: 90%;
 	}
+	/*-----add .footer-nav li margin rule for max-width: 363px-----*/
+	.footer-nav li{
+		margin: 0 .25rem;
+	}
 }
 
 @media screen and (max-width: 344px) {
@@ -1002,7 +1099,6 @@ and (max-width: 720px) {
 
 @media screen and (max-width: 240px) {
 		.contact-details-content p a {
-		border:  1px solid pink;
 		font-size: .75rem;
 	}
 }
@@ -1160,7 +1256,7 @@ and (max-width: 720px) {
 	.icon-heading {
 		width: 100%;	
 		display: flex;
-		flex-direction: row-reverse; 		
+		/*flex-direction: row-reverse;*/	
 		align-items: center; 
 	}
 	.define, .design, .develop, .deliver {
@@ -1169,7 +1265,7 @@ and (max-width: 720px) {
 	.icon-heading h2 {
 		font-size: 2.625rem;
 		text-shadow: 0 0 5px #fff;
-		margin-right: -4.375rem;
+		/*margin-right: -4.375rem;*/
 		margin-top: 0;
 	}
 	.intro-text-flex p {
@@ -1232,10 +1328,10 @@ and (max-width: 720px) {
 	}
 	.project-title-hero {
 		max-width: 980px;
-		display: flex;
+		/*display: flex;
 		justify-content: center;
-		align-items: center;
-		margin: 0 auto 2rem;
+		align-items: center;*/
+		/*margin: 0 auto 2rem;*/
 	}
 	.project-logo {
 		max-width: 30%;	
