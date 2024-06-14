@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+	scroll-behavior: smooth;
+}
 
 *{	
 	font-family: Quicksand, arial, helvetica, sans-serif;
@@ -247,9 +250,9 @@ li#lets-talk {
 	text-align: left;
 }
 
-.hero-make, 
-.hero-ideas,
-.hero-happen {
+#hero-make, 
+#hero-ideas,
+#hero-happen {
 	font-size: 5.5rem;
 	color: #2F4F4F;
 	opacity: 0;
@@ -259,13 +262,17 @@ li#lets-talk {
 }
 
 
-.hero-ideas {
+#hero-ideas {
 	transition: opacity 2.2s ease 1.6s;
 }
 
-.hero-happen {
+#hero-happen {
 	transition: opacity 2.2s ease 2.6s;
 }
+/* .hero-opacity {
+	transition: opacity 1.8s ease 500ms;
+	opacity: 1;
+} */
 
 .hero-grabline-portrait,
 .hero-grabline-landscape {
@@ -282,11 +289,19 @@ li#lets-talk {
 }
 
 .chevron{
+	display: inline-block;
 	color: #fff;
+	/* border: 5px solid magenta; */
 	margin: 0 auto;
 	cursor:  pointer;
 }
 
+
+/* #hero-bottom{
+	border: 5px solid magenta;
+	
+	scroll-behavior: smooth;
+} */
 
 /*--------creating quality--------*/
 

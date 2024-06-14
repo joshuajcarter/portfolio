@@ -1,26 +1,30 @@
-  // When the user scrolls the page, execute myFunction
+window.addEventListener("load", () => {
+  ["#hero-make", "#hero-ideas", "#hero-happen"].forEach((id) => {
+    document.querySelector(id).style.opacity = "1";
+  });
+});
 
-  /*window.onscroll = function() {
-    myFunction();
-  };*/
+const menuButton = document.getElementById("menu-button");
+const closeMenu = document.getElementById("close-menu-button")
+const workLink = document.getElementById('work-link')
+const dropDown = document.getElementById('nav-dropdown')
+const letsTalk = document.querySelectorAll('.talk')
 
-  // Get the header
-  //var header = document.getElementById("main-nav");
+function showMenu() {
+  menuButton.classList.add("hide");
+  closeMenu.classList.remove("hide");
+  dropDown.classList.remove("hide");
+}
 
-  // Get the content area
-  //var topContainer = document.getElementById("topContainer");
+function hideMenu() {
+  closeMenu.classList.add("hide");
+  menuButton.classList.remove("hide");
+  dropDown.classList.add("hide");
+}
+menuButton.addEventListener('click', showMenu)
+closeMenu.addEventListener('click', hideMenu)
+workLink.addEventListener("click", hideMenu);
 
-  // Get the offset position of the navbar
-  //var sticky = header.offsetTop;
-
-  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  /*function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-      topContainer.classList.add("topPadding");
-       // here you remove sticky -> also remove top padding
-    } else {
-      header.classList.remove("sticky");
-      topContainer.classList.remove("topPadding");
-    }
-  }*/
+letsTalk.forEach((button) => {
+  button.addEventListener("click", showMenu);
+});
