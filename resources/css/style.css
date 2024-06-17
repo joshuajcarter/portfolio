@@ -5,8 +5,6 @@ html {
 
 *{	
 	font-family: Quicksand, arial, helvetica, sans-serif;
-	/*font-size: 16px;*/
-	/*font-weight: normal;*/
 	list-style-type: none;
 	text-decoration: none;
 	box-sizing: border-box;
@@ -72,8 +70,6 @@ button {
 /*=====set max width values=====*/
 
 .main-nav, .section-container{
-	/*border: 2px dotted yellow;*/
-	/*min-width: 100vw;*/
 	background-color: #fff;
 }
 
@@ -85,29 +81,13 @@ button {
 .container ul,
 .design-banner-content,
 .section-content,
-/*.intro-content-new,*/
 .projects-section,
-/*.contact-hero-text,*/
 .footer-content,
 .project-title,
-.about-project /*projects page selector*/{
+.about-project {
 	max-width: 1280px;
 	margin: 0 auto;
 }
-/*-----comment out empty rulesets 070123
-.section-text {
-}
-*/
-
-/*=====navigation=====*/
-
-/*
-header{	
-}
-
-.sticky-nav{
-}
-*/
 
 .top-container {
 	color: #fff;
@@ -201,8 +181,6 @@ li#lets-talk {
 
 #lets-talk, 
 .contact-list a,
-
-/*contact page selector*/
 .contact-details h2,
 .contact-details a {
 	color: #ff9822; 
@@ -227,33 +205,32 @@ li#lets-talk {
 
 /*------hero banner-------*/
 
-
 .hero-banner{
-	margin-top: 5vh; /*----- main-nav fixed offset remove when sticky reenabled -----*/
-	min-height: 95vh;
+	padding-top: 57px; /* nav offset */ 
+	min-height: 100vh;
 	background-image: url(../images/hero-jigsaw.jpg);
 	background-position: left top;
 	background-size: cover;
 	background-color: #ff9a24;	
-	/*padding: 1.5rem 1.5rem;*/
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;	
 	justify-content: space-evenly;
 }
 
-.hero-grabline-landscape h1{
-	display: inline;
+.hero-grabline-landscape {
+	margin: 0 auto;
 }
 
-.hero-grabline{
-	text-align: left;
+.hero-grabline-landscape h1 {
+	display: flex;
+	flex-direction: column;
+	font-size: 3rem;
 }
 
 #hero-make, 
 #hero-ideas,
 #hero-happen {
-	font-size: 5.5rem;
 	color: #2F4F4F;
 	opacity: 0;
 	transition: opacity 1.8s ease 500ms;
@@ -261,22 +238,12 @@ li#lets-talk {
 	margin: auto; 
 }
 
-
 #hero-ideas {
 	transition: opacity 2.2s ease 1.6s;
 }
 
 #hero-happen {
 	transition: opacity 2.2s ease 2.6s;
-}
-/* .hero-opacity {
-	transition: opacity 1.8s ease 500ms;
-	opacity: 1;
-} */
-
-.hero-grabline-portrait,
-.hero-grabline-landscape {
-	margin: 0 auto;
 }
 
 .hero-tagline, .intro-paragraph, .intro-text-flex, .projects-text {
@@ -286,6 +253,35 @@ li#lets-talk {
 
 .hero-tagline h3{
 	color: #fff;
+	font-size: 1.5rem;
+}
+
+@media screen and (orientation: landscape) {
+	.hero-grabline-landscape h1{
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.hero-grabline-landscape h1{
+		font-size: 4rem;
+	}
+	.hero-tagline h3 {
+		font-size: 2rem;
+	}
+}
+@media screen and (min-width: 1023px) {
+	.hero-grabline-landscape h1{
+		font-size: 5.5rem;
+	}
+}
+@media screen and (max-width: 260px) {
+	.hero-grabline-landscape h1{
+		font-size: 2.5rem;
+	}
+	.hero-tagline h3 {
+		font-size: 1.25rem;
+	}
 }
 
 .chevron{
@@ -295,13 +291,6 @@ li#lets-talk {
 	margin: 0 auto;
 	cursor:  pointer;
 }
-
-
-/* #hero-bottom{
-	border: 5px solid magenta;
-	
-	scroll-behavior: smooth;
-} */
 
 /*--------creating quality--------*/
 
@@ -313,11 +302,6 @@ li#lets-talk {
 	font-size: 1.375rem;
 	padding: 0rem 1rem 0rem;
 }
-
-/*
-.section-content {
-}
-*/
 
 .introduction-section-content {
 	padding-top: 2rem;
@@ -399,7 +383,6 @@ li#lets-talk {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*padding-top: 3rem;-----remove padding-top intro-text-flex 070123*/
 }
 
 .intro-text-flex p {
@@ -411,71 +394,26 @@ li#lets-talk {
 .fa-hand-sparkles,
 .fa-gift{
 	box-sizing: content-box;
-	color: #cdd3de;/*#d2c1df-----alter fa icon color 070123*/
-	font-size: 3.25rem; /*4.5rem-----re-size fa icon font-size 070123*/ 
-	background-color: rgba(255, 255, 255, 0);/*#ffffff-----cut 070123*/
+	color: #cdd3de;
+	font-size: 3.25rem; 
+	background-color: rgba(255, 255, 255, 0);
 	border-radius: 12px;
-	margin-left: 1.5rem; /*added 070123*/
-	margin-top: -.75rem; /*added 070123*/
-	/*
-	padding: .75rem;
-	box-shadow: 0 0 10px #ddd;
-	-----remove fa icon padding add margin 070123*/
+	margin-left: 1.5rem; 
+	margin-top: -.75rem; 
 }
-
-/*-----add border when fa font size 4.5rem-----*/
-/* remove border from obsolete icon design 070123
-.fa-comments {
-	border: .28125rem solid white; 
-}
-	
-.fa-icons,  
-.fa-gift {
-	border: 0.5625rem solid white; 
-}
-
-.fa-comments,
-.fa-icons,
-.fa-gift {
-	border-top: 0;
-	border-bottom: 0;		
-}
------*/
 
 .icon-heading {
-	display: flex; /*add flexbox to .icon-heading 070123*/
-	justify-content: center; /*added 070123*/
-    align-items: flex-end; /*added 070123*/
+	display: flex; 
+	justify-content: center; 
+    align-items: flex-end; 
 }
-
-/* ----- remove minus margin from obsolete fa icon design 070123
-.define {
-	margin-left: -2.125rem;
-}
-
-.design {
-	margin-left: -2.325rem;
-}
-
-.develop {
-	margin-left: -2.625rem;
-}
-
-.deliver {
-	margin-left: -2.5rem;
-}
-*/
 
 .icon-heading h2 {
 	font-size: 2.625rem;
-	/*text-shadow: 0 0 5px #fff;remove properties from obsolete icon-heading h2 design 070123-----*/
-	/*margin-left: 2.75rem; cut 070123-----*/
-	/*margin-top: -3.5rem; cut 070123-----*/
 }
 
 .intro-text-flex p {
-	margin:  1.25rem 0 2.5rem 0; /* add margin remove padding intro-text-flex p 070123 */
-	/*padding-top: 2.5rem; cut 070123*/
+	margin:  1.25rem 0 2.5rem 0; 
 }
 
 .intro-text-new p {
@@ -491,7 +429,7 @@ li#lets-talk {
 /*--------projects section-------*/
 
 /*#f9f9f9; original*/  /*smartmu grey #dcdcdc;*/
- .projects-section {
+.projects-section {
  	background-color:#d6bdff;
  	padding: 0;
 }
@@ -565,7 +503,7 @@ li#lets-talk {
 
 .project-title-hero {
 	max-width: 100%;
-	/*-----add flexbox to .project-title-hero 070123-----*/
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -576,7 +514,6 @@ li#lets-talk {
 .project-logo {
 	max-width: 40%;	
 	margin-left: 8%;
-	/*float: left; remove float .project-logo 070123*/
 }
 
 .project-logo p {
@@ -591,28 +528,14 @@ li#lets-talk {
 	margin-top: 0;
 }
 
-/*
-.boothroyds-logo {
-	margin-top: 4rem; remove margin boothroyds-logo 
-}
-*/
-
 .tsunami-logo {
 	margin-top: .5rem;
 }
 
-/*
-#projectName-font {
-	font-family: ;
-	color: ;
-	font-style: ;
-}
-*/
-
 #boothroyds-font {
 	font-family: 'Coustard', serif;
 	color: #26ADE4;
-	font-size: 1.25rem/*1.125rem resize #boothroyds-font 070123*/;
+	font-size: 1.25rem;
 }
 
 #tsunami-font {
@@ -730,7 +653,7 @@ li#lets-talk {
 	justify-content: center;
 	align-items: center;
 	margin-top: 56px;
-	padding: 4rem 0; /* resize .contact-hero padding 070123 */
+	padding: 4rem 0; 
 }
 
 #index{
@@ -861,43 +784,6 @@ footer p,
 
 /*-----Media Queries-----*/
 
-/*-----aspect orientation media queries for hero-banner-----*/
-
-@media screen and (orientation: portrait) {
-	.hero-grabline-landscape {
-		display: none;
-	}
-}
-
-@media screen and (orientation: landscape) {
-	.hero-grabline-portrait {
-		display: none;
-	}
-}
-@media screen 
-and (orientation: landscape)
-and (max-width: 980px) {
-	.hero-banner {
-		padding-top: 2rem;
-	}
-	.hero-grabline-landscape h1 {
-		font-size: 4rem;
-	}
-	.hero-tagline h3 {
-		font-size: 1.5rem;
-	}
-}
-@media screen 
-and (orientation: landscape)
-and (max-width: 720px) {
-	.hero-grabline-landscape h1 {
-		font-size: 2.75rem;
-	}
-	.hero-tagline h3 {
-		font-size: 1.25rem;
-	}
-}
-
 /*-----configure mqs max-width descending value, min-width ascending value-----*/
 /*-----max-width - if a device is less than or equal to ..px, then do {…}-----*/
 /*-----min-width - if a device is greater than or equal to ..px, then do {…}-----*/
@@ -926,59 +812,8 @@ and (max-width: 720px) {
 		font-size: 4rem; /*-----add contact-hero-text h2 font-size for max-width: 720px-----*/
 	}
 }
-/*@media screen and (max-width: 1079px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1.75rem;
-	}
-}
 
-@media screen and (max-width: 901px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1.625rem;
-	}
-}
-
-@media screen and (max-width: 850px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1.5rem;
-	}
-}
-
-@media screen and (max-width: 801px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1.25rem;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1.125rem;
-	}
-}
-@media screen and (max-width: 641px) {
-	#boothroyds-font {
-		font-family: 'Coustard', serif;
-		color: #26ADE4;
-		font-size: 1rem/;
-	}
-}
-*/
 @media screen and (max-width: 480px) {
-	h1.hero-make, 
-	h1.hero-ideas,
-	h1.hero-happen {
-		font-size: 4.5rem;
-	}
 	footer p,
 	.footer-nav li {
 		font-size: .75rem;
@@ -991,30 +826,10 @@ and (max-width: 720px) {
 	}
 }
 
-@media screen and (max-width: 414px) {
-		.hero-banner {
-		padding: 3rem 0;
-	}
-}
-
 @media screen and (max-width: 380px) {
 	footer p {
 		max-width: 60%;
 		text-align: center;
-	}
-}
-
-@media screen and (max-width: 375px) {
-	.hero-banner {
-		padding: 3rem 0;
-	}
-	h1.hero-make,
-	h1.hero-ideas,
-	h1.hero-happen {
-		font-size: 3rem;
-	}
-	.hero-tagline h3 {
-		font-size: 1.5rem;
 	}
 }
 
@@ -1057,11 +872,6 @@ and (max-width: 720px) {
 		font-size: .75rem;
 	}
 }
-@media screen and (max-width: 320px) {
-	.hero-tagline h3 {
-		font-size: 1.5rem;
-	}
-}
 
 @media screen and (max-width: 295px) {
 	footer p {
@@ -1092,23 +902,12 @@ and (max-width: 720px) {
 }
 
 @media screen and (max-width: 280px) {
-	h1.hero-make, 
-	h1.hero-ideas,
-	h1.hero-happen {
-		font-size: 2.75rem;
-	}
-		footer p {
+	footer p {
 		max-width: 60%;
 	}
 	footer p,
 	.footer-nav li{
 		font-size: .5rem;
-	}
-}
-
-@media screen and (max-width: 260px) {
-	.hero-tagline h3 {
-		font-size: 1.25rem;
 	}
 }
 
@@ -1186,11 +985,6 @@ and (max-width: 720px) {
 	.section-content,
 	.projects-section-content {		
 		display: flex;
-
-									/*=====margin right!!!=====*/
-
-	/*margin-right: 3%;*/
-
 		padding: 2%;		
 	}
 	.introduction-section-content {
@@ -1257,11 +1051,6 @@ and (max-width: 720px) {
 		padding-bottom: 2rem;
 	}
 
-										/*-----margin left!!!-----*/
-
-	.margin-left {
-		/*margin: 3% 0 0 3%;*/
-	}
 	.intro-text-flex {
 		width: 100%;
 		background-color: rgba(255, 255, 255, 0.6);
@@ -1271,7 +1060,6 @@ and (max-width: 720px) {
 	.icon-heading {
 		width: 100%;	
 		display: flex;
-		/*flex-direction: row-reverse;*/	
 		align-items: center; 
 	}
 	.define, .design, .develop, .deliver {
@@ -1280,7 +1068,6 @@ and (max-width: 720px) {
 	.icon-heading h2 {
 		font-size: 2.625rem;
 		text-shadow: 0 0 5px #fff;
-		/*margin-right: -4.375rem;*/
 		margin-top: 0;
 	}
 	.intro-text-flex p {
@@ -1343,10 +1130,6 @@ and (max-width: 720px) {
 	}
 	.project-title-hero {
 		max-width: 980px;
-		/*display: flex;
-		justify-content: center;
-		align-items: center;*/
-		/*margin: 0 auto 2rem;*/
 	}
 	.project-logo {
 		max-width: 30%;	
