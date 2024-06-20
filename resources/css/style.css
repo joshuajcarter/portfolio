@@ -99,6 +99,7 @@ button {
 /*----- main nav styles when sticky nav disabled -----*/
 .main-nav {
 	position: fixed;
+	z-index: 100;
 	top: 0;
 	width: 100%;
 	padding: .25rem 0;
