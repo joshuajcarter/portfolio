@@ -25,150 +25,151 @@ family=Quicksand:wght@300;400;500;600;700
   <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
     integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
     crossorigin="anonymous"></script>
-  <style>
-    .showcase {
-      /* border: 5px solid green; */
-      margin-top: 57px;
-      margin-bottom: 2rem;
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-    .hero-image-tilt{
-      /* border: 5px solid blue;   */
-      position:relative; /* required for .overlap position:absolute centre rotate*/
-      width: 100%;
-      height: 50vh;
-      overflow: hidden;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      background-color: orange;
-      z-index: 1;
-    }
-    .hero-text-frame {
-      max-width: 1280px;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      padding: 5%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 1rem;
-      z-index: 11;
-      background-color: rgba(0, 0, 0, 0.15);
-    }
-    .hero-text{
-      color: #ffffff;
-      font-weight: bold;
-      padding-left: 5%;
-    }
-    .hero-text-frame h1 {
-      font-size: xx-large;
-    }
-    .hero-text-frame h2 {
-      font-size: x-large;
-    }
-    .hero-text-frame h3 {
-      font-size: large;
-    }
-    .overlap {
-      width: 200%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      grid-template-rows: repeat(2, 1fr); 
-      gap: 10px; 
-
-      /* centre rotate within .hero-image-tilt */
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform-origin: center;
-      transform:  translate(-50%, -50%) rotate(20deg); 
-    }
-    .overlap-group {
-      display: contents; /* place images directly in the .overlap grid */
-    }
-    .overlap-group img {
-      width: 100%;
-      height: auto; 
-    }
-    .showcase .case-study-card {
-      /* border: 5px solid magenta; */
-      max-width: 1280px;
-      margin-top: 2rem;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr); 
-      grid-template-rows: repeat(2, 1fr); 
-      background-color: #ffffff;
-      justify-items: center;
-    }
-    .img-frame{
-      width: 80%;
-    }
-    .image-medium{
-      border-radius: 50%;
-    }
-    .case-text-frame{
-      /* border: 5px solid yellow; */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;  
-      align-items: center;
-      width: 80%;
-    }
-    .case-text{
-      /* border: 5px solid aqua; */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      gap: .5rem;
-    }
-    .case-text h3{
-      font-weight: bold;
-    }
-    .case-text p span {
-      font-weight: bold;
-    }
-    .case-button{
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 1.375rem;
-      text-align: center;
-      background-color: #ff9822;
-      padding: .375rem;
-      margin-top: 2rem;
-    }
-    @media screen and (min-width: 600px) {
-      .showcase{
-        margin-bottom: 4rem;
+    <style>
+      .showcase {
+        /* border: 5px solid green; */
+        margin-top: 57px;
+        margin-bottom: 2rem;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
       }
       .hero-image-tilt{
-        height: 80vh;
+        /* border: 5px solid blue;   */
+        position:relative; /* required for .overlap position:absolute centre rotate*/
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        z-index: 1;
+      }
+      .hero-text-frame {
+        max-width: 1280px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        z-index: 11;
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      .hero-text{
+        color: #ffffff;
+        font-weight: bold;
+        padding-left: 5%;
+      }
+      .hero-text-frame h1 {
+        font-size: xx-large;
+      }
+      .hero-text-frame h2 {
+        font-size: x-large;
+      }
+      .hero-text-frame h3 {
+        font-size: large;
       }
       .overlap {
-        width: 160%;
+        width: 200%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 10px; 
+
+        /* centre rotate within .hero-image-tilt */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: center;
+        transform:  translate(-50%, -50%) rotate(20deg); 
       }
-      .hero-text-frame{
-        left: 5%;
-        width: 360px;
-        height: 360px;
-        border-radius: 50%;
-        padding: 2%;
+      .overlap-group {
+        display: contents; /* place images directly in the .overlap grid */
+      }
+      .overlap-group img {
+        width: 100%;
+        height: auto; 
       }
       .showcase .case-study-card {
-        margin-top: 4rem;
-        gap: 2rem;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(1, 1fr);     
+        /* border: 5px solid magenta; */
+        max-width: 1280px;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        background-color: #ffffff;
+        justify-items: center;
       }
-    
-    }
-  </style>
+      .img-frame{
+        width: 80%;
+      }
+      .image-medium{
+        border-radius: 50%;
+      }
+      .case-text-frame{
+        /* border: 5px solid yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+        align-items: center;
+        width: 80%;
+      }
+      .case-text{
+        /* border: 5px solid aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: .5rem;
+      }
+      .case-text h3{
+        font-weight: bold;
+      }
+      .case-text p span {
+        font-weight: bold;
+      }
+      .case-button{
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 1.375rem;
+        text-align: center;
+        background-color: #ff9822;
+        padding: .375rem;
+        margin-top: 2rem;
+      }
+
+      @media screen and (min-width: 600px) {
+        .showcase{
+          margin-bottom: 4rem;
+        }
+        .hero-image-tilt{
+          height: 80vh;
+        }
+        .overlap {
+          width: 160%;
+        }
+        .hero-text-frame{
+          left: 5%;
+          width: 360px;
+          height: 360px;
+          border-radius: 50%;
+          padding: 2%;
+        }
+        .showcase .case-study-card {
+          margin-top: 4rem;
+          gap: 2rem;
+          grid-template-columns: repeat(2, 1fr); 
+          grid-template-rows: repeat(1, 1fr);     
+        }
+      
+      }
+    </style>
 </head>
 
 <body>
