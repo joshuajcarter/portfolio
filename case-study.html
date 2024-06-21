@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Joshua J. Carter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?
+family=Quicksand:wght@300;400;500;600;700
+&family=Archivo+Black
+&display=swap" rel="stylesheet">
+
+  <!--link tags from favicon.io-->
+  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!--fontawesome-->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+    integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+    crossorigin="anonymous"></script>
+  <style>
+    .case-hero{
+      width: 100%;
+      margin-top: 57px;
+    }
+    .case-hero-content{
+      border: 5px solid magenta;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      max-width: 1280px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    .case-hero-content h1{
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .case-hero-content h3{
+      font-size: 1.5rem;
+      max-width: 85%;
+      /* text-align: center; */
+    }
+    .case-hero-img{
+      max-width: 85%;
+    }
+    @media screen and (min-width: 600px) {
+      .case-hero-content{
+        gap: 4rem;
+      }
+      .case-hero-content h3{
+        max-width: 50%;      
+      }
+      .case-hero-img{
+        max-width: 60%;
+      }
+    }
+    .overview-container{
+      width: 100%;
+    }
+    .overview{
+      border: 5px solid magenta;
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .overview h2{
+      /* border: 5px solid ; */
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .overview-text{
+      /* border: 5px solid; */
+      display: flex;
+      
+      margin: 0 auto;
+       flex-direction: column;
+        align-items: center;
+    }
+    .overview-main{
+      /* border: 5px solid cyan;       */
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .overview-p{
+      margin-top: 1rem;
+    }
+    .overview-side{
+      /* border: 5px solid cyan; */
+      width: 40%; 
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+    .overview-side-content{
+      /* border: 5px solid cyan; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* height: 100%; */
+      /* margin: 0 auto; */
+      font-size: .5rem;    
+    }
+    .overview-side-text h5{
+      font-size: large;
+      font-weight: bold;
+      text-align: center;
+     
+    }
+    .overview-side-text p{
+      font-size: medium;
+      text-align: center;
+     
+      margin-bottom: .7rem;
+    }
+
+    .prototype-button{
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 1.375rem;
+      text-align: center;
+      background-color: #ff9822;
+      padding: .375rem;
+      margin-top: 2rem;
+    }
+    @media screen and (min-width: 600px) {
+      .overview-text{
+      width: 80%;
+      flex-direction: row;
+      }
+      .overview-main{
+      width: 60%;
+      margin-bottom: 0;
+      }
+      .overview-side-content{
+
+      }
+      .overview-side-text h5{
+      text-align: left;
+      }
+      .overview-side-text p{
+      text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="header-nav">
+
+      <div class="sticky-nav">
+
+
+        <div class="main-nav" id="main-nav"><!--100vw padding top bottom-->
+
+          <div class="nav-bar"><!--max 1280px-->
+            <div class="logo">
+              <a id="home-link" href="index.html">Joshua J. Carter</a>
+            </div>
+            <div>
+              <div id='menu-button'>
+                <i class="fas fa-bars fa-lg"></i>
+              </div>
+            </div>
+            <div>
+              <div id="close-menu-button" class='hide'>
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </div> <!--nav-bar-->
+
+          <!-- Nav Menu -->
+          <div class='nav-menu hide' id='nav-dropdown'>
+            <div class='container'>
+              <ul id="link-list">
+                <!--<li><a href="">About</a></li>-->
+                <li><a id="work-link" href="#work-anchor">Work</a></li>
+                <!--<li><a href="">Services</a></li>-->
+                <!--<li><a href="">Journal/News & Views</a></li>-->
+                <li><a id="contact-link" href="contact.html">Contact</a></li>
+                <li class="hide"><a href="">Search icon</a></li>
+              </ul>
+              <ul class="contact-list">
+                <li id="lets-talk">let's talk</li>
+                <li><a href="mailto:client@joshuajcarter.com">Client
+                    enquiries<br><span>client@joshuajcarter.com</span></a></li>
+                <li><a href="mailto:enquiry@joshuajcarter.com">General
+                    enquiries<br><span>enquiry@joshuajcarter.com</span></a></li>
+              </ul>
+
+            </div>
+
+          </div><!--.nav-menu .hide #nav-dropdown-->
+
+        </div><!--.main-nav #main-nav-->
+       
+      </div><!--.sticky-nav-->
+
+    </nav><!--.header-nav-->
+  </header>
+
+  <main>
+    <div class="case-hero">
+      <div class="case-hero-content">
+        <h1>Project</h1>
+        <h3>An end to end app packed with outstanding features</h3>
+        <img class="case-hero-img" src="resources/images/tsunami-mockup-146kb.png" />
+      </div>
+    </div>
+    <div class="overview-container">
+      <div class="overview">
+        <h2>Project Overview</h2>
+        <div class="overview-text">
+          <div class="overview-main">
+            <div class="challenge">
+              <h4>Challenge</h4>
+              <!-- <div class="overlap-group"> -->
+                <p class="overview-p">
+                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis.
+                </p>
+                <p class="overview-p">
+                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis.
+                </p>
+              <!-- </div> -->
+            </div>
+            <div class="objectives">
+              <h4>Objectives</h4>             
+              <p class="overview-p">
+                Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                aliquet odio mattis.
+              </p>
+            </div>
+          </div>
+          <div class="overview-side">
+            <div class="overview-side-content">
+              <div class="overview-side-text">
+                <h5>Project Scope</h5>
+                <p>dolor sit amet</p>
+              </div>
+              <div class="overview-side-text">
+                <h5>Tools</h5>
+                <p>dolor sit amet</p>
+              </div>
+              <div class="overview-side-text">
+                <h5>Role</h5>
+                <p>dolor sit amet</p>
+              </div>
+              <div class="overview-side-text">
+                <h5>Team</h5>
+                <p>dolor sit amet</p>
+              </div>
+              <div class="overview-side-text">
+                <h5>Duration</h5>
+                <p>dolor sit amet</p>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <!-- <div class="case-cta"> -->
+          <a class="prototype-button" href="projects.html">View prototype</a>
+        <!-- </div> -->
+      </div>
+    </div>
+
+  </main>
+  <footer>
+
+    <section class="footer-content">
+
+      <!-- disabled socials icons		
+		<nav >
+			<ul class="footer-icon-nav">
+				<li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter"><i class="fab fa-github-square"></i></a></li>
+				<li><a title="View Facebook" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+				<li><a title="View Twitter" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a title="View Instagram" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+
+			</ul>
+		</nav>
+-->
+
+      <p>Design &#38; code by Joshua J. Carter</p>
+      <p>&copy; 2023. All rights reserved</p>
+      <nav>
+        <ul class="footer-nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#work-anchor">work</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter/portfolio" href>view
+              code</a></li>
+          <!--li><a>donate</a></li-->
+        </ul>
+      </nav>
+
+    </section>
+
+  </footer>
+
+
+
+  <!--include external javascript file-->
+  <script type="text/javascript" src='resources/js/main.js'></script>
+  <!--reference jQuery Library-->
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script> -->
+  <!--include external JQuery file-->
+  <!-- <script type="text/javascript" src='resources/js/jquery.js'></script> -->
+
+</body>
+
+</html>
