@@ -26,12 +26,17 @@ family=Quicksand:wght@300;400;500;600;700
     integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
     crossorigin="anonymous"></script>
   <style>
+    main{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
     .case-hero{
       width: 100%;
       margin-top: 57px;
     }
     .case-hero-content{
-      border: 5px solid magenta;
+      /* border: 5px solid magenta; */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -68,7 +73,7 @@ family=Quicksand:wght@300;400;500;600;700
       width: 100%;
     }
     .overview{
-      border: 5px solid magenta;
+      /* border: 5px solid magenta; */
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
@@ -139,9 +144,12 @@ family=Quicksand:wght@300;400;500;600;700
       text-align: center;
       background-color: #ff9822;
       padding: .375rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
     @media screen and (min-width: 600px) {
+      .overview h2{
+        font-size: 2.5rem
+      }
       .overview-text{
       width: 80%;
       flex-direction: row;
@@ -157,6 +165,142 @@ family=Quicksand:wght@300;400;500;600;700
       text-align: left;
       }
     }
+    .case-design-process{
+      width: 100%;
+    }
+    .case-design-tile{
+      /* border: 5px solid magenta; */
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .case-design-tile h2 {
+      /* border: 2px solid; */
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .workflow-frame{
+      /* border: 5px solid; */
+      display: grid;   
+      grid-template-columns: repeat(1, 1fr); 
+      /* width: 60%;       */
+      gap: 1rem; 
+    }
+    .workflow-item{
+      /* border: 5px solid blue; */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1rem;
+    }
+    .workflow-t{
+      /* border: 5px solid yellow; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+    .fa-shapes{
+      color: #2F4F4F;
+      font-size: 2.5rem;
+    }
+    .workflow-item-title{
+      font-size: 1.5rem;
+    }
+    .workflow-ul{
+      /* border: 5px solid yellow; */
+      margin-top: 2rem;
+    }
+    .workflow-ul li{
+      margin-bottom: .25rem;
+    }
+    @media screen and (min-width: 600px){
+      .case-design-tile h2 {
+        font-size: 2.5rem;
+      }
+      .workflow-frame{
+        /* border: 5px solid; */
+        display: grid;   
+        grid-template-columns: repeat(2, 1fr); ;
+       width: 80%;
+      }
+    }
+    @media screen and (min-width: 1020px){
+      .workflow-frame{
+        /* border: 5px solid; */
+        display: grid;   
+        grid-template-columns: repeat(4, 1fr); 
+        width: 100%;
+      }
+    }
+    .research{
+      /* border: 5px solid magenta; */
+      width: 80%;
+      margin: 0 auto;
+    }
+    .research h3{
+      /* border: 5px solid magenta; */
+      font-weight: bold;
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .research-item{
+      /* border: 5px solid cyan; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+    .research-item-title{
+      /* border: 5px solid gold; */
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .research-item-title h4{
+      /* border: 5px solid; */
+      /* flex: 1; */
+      /* display:inline-block; */
+      /* width: 60%; */
+    }
+    .research-item-title .icon-container{
+      /* width: 40%; */
+      /* text-align: left; */
+      /* margin: .5rem; */
+    }
+    .research-item ul  {
+      max-width: 640px;
+      /* padding: 1rem; */
+    }
+    .research-item ul li {
+      margin-bottom: 1rem;
+    }
+    .strategy{
+    border: 5px solid magenta;
+    width: 100%;
+    }
+    .design{
+    border: 5px solid magenta;
+    width: 100%;
+    }
+    .prototype{
+    border: 5px solid magenta;
+    width: 100%;
+    }
+    
+
   </style>
 </head>
 
@@ -279,6 +423,204 @@ family=Quicksand:wght@300;400;500;600;700
         <!-- <div class="case-cta"> -->
           <a class="prototype-button" href="projects.html">View prototype</a>
         <!-- </div> -->
+      </div>
+    </div>
+    
+    <div class="case-design-process">
+      <div class="case-design-tile">
+        <h2>Design Process</h2>
+        <div class="workflow-frame"> 
+          <div class="workflow-item">
+            <div class="workflow-t">
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+              <h4 class="workflow-item-title">1 Research</h4>
+            </div>
+            <ul class="workflow-ul">
+              <li>
+                <p class="">• Market Analysis</p>                  
+              </li>
+              <li>
+                <p class="">• Target Audience</p>                  
+              </li>
+              <li>
+                <p class="">• Competitor Analysis</p>                  
+              </li>
+              <li>
+                <p class="">• User Solutions</p>                  
+              </li>
+              <li>
+                <p class="">• User Solutions</p>                  
+              </li>
+              <li>
+                <p class="">• User Solutions</p>                  
+              </li>
+            </ul>
+          </div>
+
+          <div class="workflow-item">
+            <div class="workflow-t">
+              <div class="icon-container">
+              <i class="fas fa-shapes "></i>
+              </div>
+              <h4 class="workflow-item-title">2 Strategy</h4>
+            </div>
+            <ul class="workflow-ul">
+              <li>
+                <p class="">• Market Analysis</p>
+              </li>
+              <li>
+                <p class="">• Target Audience</p>
+              </li>
+              <li>
+                <p class="">• Competitor Analysis</p>
+              </li>
+              <li>
+                <p class="">• User Solutions</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="workflow-item">
+            <div class="workflow-t">
+              <div class="icon-container">
+              <i class="fas fa-shapes "></i>
+              </div>
+              <h4 class="workflow-item-title">3 Design</h4>
+            </div>
+            <ul class="workflow-ul">
+              <li>
+                <p class="">• Market Analysis</p>
+              </li>
+              <li>
+                <p class="">• Target Audience</p>
+              </li>
+              <li>
+                <p class="">• Competitor Analysis</p>
+              </li>
+              <li>
+                <p class="">• User Solutions</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="workflow-item">
+            <div class="workflow-t">
+              <div class="icon-container">
+              <i class="fas fa-shapes "></i>
+              </div>
+              <h4 class="workflow-item-title">4 Prototype</h4>
+            </div>
+            <ul class="workflow-ul">
+              <li>
+                <p class="">• Market Analysis</p>                  
+              </li>
+              <li>
+                <p class="">• Target Audience</p>                  
+              </li>
+              <li>
+                <p class="">• Competitor Analysis</p>                  
+              </li>
+              <li>
+                <p class="">• User Solutions</p>                  
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="research">
+          <h3>01 Research</h3>
+
+          <div class="research-item">
+            <div class="research-item-title">
+              <h4>Market Analysis</h4>
+              <div>
+
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <ul>
+              <li class="item1">• Understand the market of related platforms</li>
+              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+            </ul>     
+          </div>
+
+          <div class="research-item">
+            <div class="research-item-title">
+              <h4>Target Audience</h4>
+              <div>
+
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <ul>
+              <li class="item1">• Understand the market of related platforms</li>
+              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+            </ul>     
+          </div>
+          
+          <div class="research-item">
+            <div class="research-item-title">
+              <h4>Competitor Analysis</h4>
+              <div>
+
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <ul>
+              <li class="item1">• Understand the market of related platforms</li>
+              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+            </ul>     
+          </div>
+          
+          <div class="research-item">
+            <div class="research-item-title">
+              <h4>User Solutions</h4>
+              <div>
+
+              </div>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <ul>
+              <li class="item1">• Understand the market of related platforms</li>
+              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
+            </ul>     
+          </div>
+
+          
+        </div>
+        
+        <div class="strategy">
+          <h2>Strategy</h2>
+        </div>
+        <div class="strategy">
+          <h2>Design</h2>
+        </div>
+        <div class="design">
+          <h2>Prototype</h2>
+        </div>
       </div>
     </div>
 
