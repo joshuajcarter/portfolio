@@ -291,6 +291,54 @@ family=Quicksand:wght@300;400;500;600;700
     border: 5px solid magenta;
     width: 100%;
     }
+    .strategy-item{
+      /* border: 5px solid cyan; */
+      display: flex;
+      flex-direction: column;     
+      align-items: center;      
+      max-width: 1280px;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      /* padding: 0  2rem; */
+    }
+    .strategy-item-content{
+      /* border: 5px solid yellow; */
+      max-width: 85%;
+    }
+    .strategy-item-content h4{
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+    .strategy-item-li{
+      margin-bottom: .5rem;
+    }
+    .app-map{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .app-map h4,  .app-map p{
+      margin-bottom: 1rem;
+    }
+    .app-map p, .app-map-img-container{
+      max-width: 80%;
+    }
+    @media screen and (min-width: 600px) {
+      .strategy-item{
+        flex-direction: row; 
+        justify-content: center;
+        align-items: normal;
+        padding: 0 2rem;
+      }
+      .strategy-item-content{
+        max-width: 320px;  
+      }
+      .app-map p, .app-map-img-container{
+        max-width: 60%;
+      }
+
+    }
     .design{
     border: 5px solid magenta;
     width: 100%;
@@ -614,12 +662,40 @@ family=Quicksand:wght@300;400;500;600;700
         
         <div class="strategy">
           <h2>Strategy</h2>
-        </div>
-        <div class="strategy">
-          <h2>Design</h2>
+          <div class="strategy-item">
+              <div class="strategy-item-content">
+                <h4>Product Goals</h4>
+                <ul>
+                  <li class="strategy-item-li">• Understand the market of related platforms</li>
+                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
+                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
+                </ul>
+
+              </div>
+              <div class="strategy-item-content">
+                <h4>App features</h4>
+                <ul>
+                  <li class="strategy-item-li">• Understand the market of related platforms</li>
+                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
+                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
+                </ul>
+              </div>
+          </div>
+          <div class="app-map">
+            <h4>Application map</h4>
+            <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
+            <div class="app-map-img-container">
+              <img src="resources/images/app-map.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="design">
+          <h2>Design</h2>
+          <img src="resources/images/task-user-flow.png" alt="">
+        </div>
+        <div class="prototype">
           <h2>Prototype</h2>
+          <img src="resources/images/lo-fi-sketch.png" alt="">
         </div>
       </div>
     </div>
