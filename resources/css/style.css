@@ -146,11 +146,11 @@ button {
 } 	
 
 #link-list {
-  	font-size: 3rem;
-  	color: #fff;
-  	text-align: right;
-  	text-transform: uppercase;
-  	margin-bottom: 2rem;
+	font-size: 3rem;
+	color: #fff;
+	text-align: right;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
 }
 
 #link-list a:hover {
