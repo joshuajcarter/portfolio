@@ -137,13 +137,13 @@ button {
 }
 
 .nav-menu .container {
-    width: 100%;
-    background-color: rgba(47, 79, 79, 0.9); /*-----#2f4f4f-----*/
-    padding: 1.5em;
-    padding-bottom: 5rem;
-    position: absolute;
-    z-index: 1000; 
-} 
+	width: 100%;
+	background-color: rgba(47, 79, 79, 0.9); /*-----#2f4f4f-----*/
+	padding: 1.5em;
+	padding-bottom: 5rem;
+	position: absolute;
+	z-index: 1000; 
+} 	
 
 #link-list {
   	font-size: 3rem;
@@ -202,7 +202,24 @@ li#lets-talk {
   width: 100%;
   border-bottom: 1px solid #f9f9f9;
 }
-
+@media screen and (max-height: 520px) {
+	.nav-menu .container {
+		display: flex;
+		flex-direction: row-reverse;
+		max-height: 86vh;
+	}
+	#link-list {
+		height: 100%;
+	}
+	li#lets-talk {
+		font-size: 1.75rem;
+		text-transform: uppercase;
+		padding-top: 0;
+		border-top: 0;
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
+}
 
 /*------hero banner-------*/
 
