@@ -244,7 +244,7 @@ family=Quicksand:wght@300;400;500;600;700
       width: 80%;
       margin: 0 auto;
     }
-    .research h3{
+    .research h3, .strategy h3, .design h3, .prototype h3{
       /* border: 5px solid magenta; */
       font-weight: bold;
       text-align: center;
@@ -288,8 +288,8 @@ family=Quicksand:wght@300;400;500;600;700
       margin-bottom: 1rem;
     }
     .strategy{
-    border: 5px solid magenta;
-    width: 100%;
+      border: 5px solid magenta;
+      width: 100%;
     }
     .strategy-item{
       /* border: 5px solid cyan; */
@@ -322,7 +322,8 @@ family=Quicksand:wght@300;400;500;600;700
       margin-bottom: 1rem;
     }
     .app-map p, .app-map-img-container{
-      max-width: 80%;
+      /* border: 5px solid; */
+      max-width: 85%;
     }
     @media screen and (min-width: 600px) {
       .strategy-item{
@@ -335,13 +336,24 @@ family=Quicksand:wght@300;400;500;600;700
         max-width: 320px;  
       }
       .app-map p, .app-map-img-container{
-        max-width: 60%;
+        max-width: 640px;
       }
-
     }
     .design{
     border: 5px solid magenta;
     width: 100%;
+    }
+    .task-flow, .user-flow{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+     .task-flow h4,  .task-flow p, .user-flow h4, .user-flow p{
+      margin-bottom: 1rem;
+    }
+    .task-flow p, .task-flow-img-container, .user-flow p, .user-flow-img-container{
+      max-width: 80%;
     }
     .prototype{
     border: 5px solid magenta;
@@ -478,7 +490,7 @@ family=Quicksand:wght@300;400;500;600;700
       <div class="case-design-tile">
         <h2>Design Process</h2>
         <div class="workflow-frame"> 
-          <div class="workflow-item">
+          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item/section tile-->
             <div class="workflow-t">
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
@@ -507,7 +519,7 @@ family=Quicksand:wght@300;400;500;600;700
             </ul>
           </div>
 
-          <div class="workflow-item">
+          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
             <div class="workflow-t">
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
@@ -530,7 +542,7 @@ family=Quicksand:wght@300;400;500;600;700
             </ul>
           </div>
 
-          <div class="workflow-item">
+          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
             <div class="workflow-t">
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
@@ -553,7 +565,7 @@ family=Quicksand:wght@300;400;500;600;700
             </ul>
           </div>
 
-          <div class="workflow-item">
+          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
             <div class="workflow-t">
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
@@ -579,14 +591,11 @@ family=Quicksand:wght@300;400;500;600;700
         </div>
 
         <div class="research">
-          <h3>01 Research</h3>
+          <h3>01 Research</h3> <!-- REUSABLE COMPONENT section-title -->
 
           <div class="research-item">
-            <div class="research-item-title">
+            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
               <h4>Market Analysis</h4>
-              <div>
-
-              </div>
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
@@ -601,11 +610,8 @@ family=Quicksand:wght@300;400;500;600;700
           </div>
 
           <div class="research-item">
-            <div class="research-item-title">
+            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
               <h4>Target Audience</h4>
-              <div>
-
-              </div>
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
@@ -620,11 +626,8 @@ family=Quicksand:wght@300;400;500;600;700
           </div>
           
           <div class="research-item">
-            <div class="research-item-title">
-              <h4>Competitor Analysis</h4>
-              <div>
-
-              </div>
+            <div class="research-item-title"><!-- REUSABLE COMPONENT section icon ul-->   
+              <h4>Competitor Analysis</h4>            
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
@@ -639,8 +642,8 @@ family=Quicksand:wght@300;400;500;600;700
           </div>
           
           <div class="research-item">
-            <div class="research-item-title">
-              <h4>User Solutions</h4>
+            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
+              <h4>User Solutions</h4> 
               <div>
 
               </div>
@@ -661,9 +664,9 @@ family=Quicksand:wght@300;400;500;600;700
         </div>
         
         <div class="strategy">
-          <h2>Strategy</h2>
-          <div class="strategy-item">
-              <div class="strategy-item-content">
+          <h3>02 Strategy</h3> <!-- REUSABLE COMPONENT section-title -->
+          <div class="strategy-item"> 
+              <div class="strategy-item-content"> <!-- REUSABLE COMPONENT section icon ul-->
                 <h4>Product Goals</h4>
                 <ul>
                   <li class="strategy-item-li">• Understand the market of related platforms</li>
@@ -672,7 +675,7 @@ family=Quicksand:wght@300;400;500;600;700
                 </ul>
 
               </div>
-              <div class="strategy-item-content">
+              <div class="strategy-item-content"> <!-- REUSABLE COMPONENT section icon ul-->
                 <h4>App features</h4>
                 <ul>
                   <li class="strategy-item-li">• Understand the market of related platforms</li>
@@ -681,7 +684,7 @@ family=Quicksand:wght@300;400;500;600;700
                 </ul>
               </div>
           </div>
-          <div class="app-map">
+          <div class="app-map"> <!-- REUSABLE COMPONENT subtitle-p-img -->
             <h4>Application map</h4>
             <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
             <div class="app-map-img-container">
@@ -690,11 +693,24 @@ family=Quicksand:wght@300;400;500;600;700
           </div>
         </div>
         <div class="design">
-          <h2>Design</h2>
-          <img src="resources/images/task-user-flow.png" alt="">
+          <h3>03 Design</h3> <!-- REUSABLE COMPONENT section-title -->
+          <div class="task-flow"> <!-- REUSABLE COMPONENT subtitle-p-img -->
+            <h4>Task flow</h4>
+            <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
+            <div class="app-map-img-container">
+              <img src="resources/images/task-user-flow.png" alt="">
+            </div>
+          </div>
+          <div class="user-flow"> <!-- REUSABLE COMPONENT subtitle-p-img -->
+            <h4>User flow</h4>
+            <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
+            <div class="app-map-img-container">
+              <img src="resources/images/task-user-flow.png" alt="">
+            </div>
+          </div>
         </div>
         <div class="prototype">
-          <h2>Prototype</h2>
+          <h3>04 Prototype</h3>
           <img src="resources/images/lo-fi-sketch.png" alt="">
         </div>
       </div>
