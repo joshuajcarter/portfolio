@@ -27,33 +27,92 @@ family=Quicksand:wght@300;400;500;600;700
     crossorigin="anonymous"></script>
   <style>
     main{
+      margin: 57px 0 2rem;
+      /* border: 5px solid magenta; */
       display: flex;
       flex-direction: column;
       gap: 4rem;
     }
-    .case-hero{
+    .section{      
+      /* border: 5px solid red; */
       width: 100%;
-      margin-top: 57px;
     }
-    .case-hero-content{
-      /* border: 5px solid magenta; */
+    .section-container{
+      /* border: 5px solid green; */
+      max-width: 1280px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2rem;
-      max-width: 1280px;
-      padding: 20px;
-      margin: 0 auto;
     }
-    .case-hero-content h1{
+    .section-container h1{
       font-size: 3rem;
       font-weight: bold;
     }
+    .section-container h2{
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .section-item{
+      /* border: 5px solid orange; */
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .sub-section-title h3{
+      /* border: 5px solid magenta; */
+      font-weight: bold;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .article{
+      /* border: 5px solid blue; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .article-title-container{
+      /* border: 5px solid gold; */
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .article-ul{
+      width: 90%;
+      max-width: 640px;      
+    }
+    .article-li, .workflow-li {     
+      font-size: 1.25rem;
+      color: #2F4F4F;
+      list-style: disc outside;
+      margin-bottom: .5rem;
+    }
+    
+    @media screen and (min-width: 600px){
+      .article p, .article-image-container{
+        /* border: 5px solid orchid; */
+        max-width: 675px;
+      }
+    }
+    
+    .case-hero{
+      /* margin-top: 57px; */
+    }
     .case-hero-content h3{
       font-size: 1.5rem;
-      max-width: 85%;
-      /* text-align: center; */
+      max-width: 75%;
     }
     .case-hero-img{
       max-width: 85%;
@@ -69,32 +128,13 @@ family=Quicksand:wght@300;400;500;600;700
         max-width: 60%;
       }
     }
-    .overview-container{
-      width: 100%;
-    }
-    .overview{
-      /* border: 5px solid magenta; */
-      max-width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .overview h2{
-      /* border: 5px solid ; */
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+
     .overview-text{
       /* border: 5px solid; */
-      display: flex;
-      
+      display: flex;      
       margin: 0 auto;
-       flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     .overview-main{
       /* border: 5px solid cyan;       */
@@ -120,20 +160,16 @@ family=Quicksand:wght@300;400;500;600;700
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      /* height: 100%; */
-      /* margin: 0 auto; */
       font-size: .5rem;    
     }
     .overview-side-text h5{
       font-size: large;
       font-weight: bold;
-      text-align: center;
-     
+      text-align: center;     
     }
     .overview-side-text p{
       font-size: medium;
-      text-align: center;
-     
+      text-align: center;     
       margin-bottom: .7rem;
     }
 
@@ -144,12 +180,9 @@ family=Quicksand:wght@300;400;500;600;700
       text-align: center;
       background-color: #ff9822;
       padding: .375rem;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
     @media screen and (min-width: 600px) {
-      .overview h2{
-        font-size: 2.5rem
-      }
       .overview-text{
       width: 80%;
       flex-direction: row;
@@ -165,41 +198,22 @@ family=Quicksand:wght@300;400;500;600;700
       text-align: left;
       }
     }
-    .case-design-process{
-      width: 100%;
-    }
-    .case-design-tile{
-      /* border: 5px solid magenta; */
-      max-width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .case-design-tile h2 {
-      /* border: 2px solid; */
-      font-size: 2rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+
     .workflow-frame{
       /* border: 5px solid; */
       display: grid;   
       grid-template-columns: repeat(1, 1fr); 
-      /* width: 60%;       */
       gap: 1rem; 
     }
     .workflow-item{
-      /* border: 5px solid blue; */
+      /* border: 5px solid rgb(117, 167, 248); */
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       padding: 1rem;
     }
-    .workflow-t{
+    .workflow-title-container{
       /* border: 5px solid yellow; */
       display: flex;
       justify-content: space-around;
@@ -219,16 +233,23 @@ family=Quicksand:wght@300;400;500;600;700
     }
     .workflow-ul li{
       margin-bottom: .25rem;
+      list-style: disc inside;
     }
+    .li-inline-text {
+      display: inline;
+      margin: 0; 
+    }
+    
     @media screen and (min-width: 600px){
-      .case-design-tile h2 {
-        font-size: 2.5rem;
-      }
       .workflow-frame{
         /* border: 5px solid; */
         display: grid;   
         grid-template-columns: repeat(2, 1fr); ;
-       width: 80%;
+        width: 80%;
+      }
+      .workflow-title-container{
+        justify-content: center;
+        gap: 1rem;        
       }
     }
     @media screen and (min-width: 1020px){
@@ -239,121 +260,21 @@ family=Quicksand:wght@300;400;500;600;700
         width: 100%;
       }
     }
-    .research{
-      /* border: 5px solid magenta; */
-      width: 80%;
-      margin: 0 auto;
-    }
-    .research h3, .strategy h3, .design h3, .prototype h3{
-      /* border: 5px solid magenta; */
-      font-weight: bold;
-      text-align: center;
-      margin: 3rem 0;
-    }
-    .research-item{
-      /* border: 5px solid cyan; */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 2rem;
-    }
-    .research-item-title{
-      /* border: 5px solid gold; */
-      display: flex;
-      justify-content: center;
-      align-items: center;  
-      gap: 1rem;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-    .research-item-title h4{
-      /* border: 5px solid; */
-      /* flex: 1; */
-      /* display:inline-block; */
-      /* width: 60%; */
-    }
-    .research-item-title .icon-container{
-      /* width: 40%; */
-      /* text-align: left; */
-      /* margin: .5rem; */
-    }
-    .research-item ul  {
-      max-width: 640px;
-      /* padding: 1rem; */
-    }
-    .research-item ul li {
-      margin-bottom: 1rem;
-    }
-    .strategy{
-      border: 5px solid magenta;
-      width: 100%;
-    }
-    .strategy-item{
+
+    #strategy-item{
       /* border: 5px solid cyan; */
       display: flex;
       flex-direction: column;     
       align-items: center;      
-      max-width: 1280px;
       gap: 2rem;
-      margin-bottom: 2rem;
-      /* padding: 0  2rem; */
-    }
-    .strategy-item-content{
-      /* border: 5px solid yellow; */
-      max-width: 85%;
-    }
-    .strategy-item-content h4{
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 1rem;
-    }
-    .strategy-item-li{
-      margin-bottom: .5rem;
-    }
-    .app-map{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .app-map h4,  .app-map p{
-      margin-bottom: 1rem;
-    }
-    .app-map p, .app-map-img-container{
-      /* border: 5px solid; */
-      max-width: 85%;
     }
     @media screen and (min-width: 600px) {
-      .strategy-item{
+      #strategy-item{
+        max-width: 690px;
         flex-direction: row; 
         justify-content: center;
         align-items: normal;
-        padding: 0 2rem;
-      }
-      .strategy-item-content{
-        max-width: 320px;  
-      }
-      .app-map p, .app-map-img-container{
-        max-width: 640px;
-      }
-    }
-    .design{
-    border: 5px solid magenta;
-    width: 100%;
-    }
-    .task-flow, .user-flow{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 2rem;
-    }
-     .task-flow h4,  .task-flow p, .user-flow h4, .user-flow p{
-      margin-bottom: 1rem;
-    }
-    .task-flow p, .task-flow-img-container, .user-flow p, .user-flow-img-container{
-      max-width: 80%;
+      }      
     }
     .prototype{
     border: 5px solid magenta;
@@ -375,7 +296,7 @@ family=Quicksand:wght@300;400;500;600;700
 
         <div class="main-nav" id="main-nav"><!--100vw padding top bottom-->
 
-          <div class="nav-bar"><!--max 1280px-->
+          <div class="nav-bar"> <!--max 1280px-->
             <div class="logo">
               <a id="home-link" href="index.html">Joshua J. Carter</a>
             </div>
@@ -422,21 +343,20 @@ family=Quicksand:wght@300;400;500;600;700
   </header>
 
   <main>
-    <div class="case-hero">
-      <div class="case-hero-content">
+    <div class="case-hero section"> 
+      <div class="case-hero-content section-container"> 
         <h1>Project</h1>
         <h3>An end to end app packed with outstanding features</h3>
         <img class="case-hero-img" src="resources/images/tsunami-mockup-146kb.png" />
       </div>
     </div>
-    <div class="overview-container">
-      <div class="overview">
-        <h2>Project Overview</h2>
+    <div class="section"> 
+      <div class="section-container"> 
+        <h2>Project Overview</h2> 
         <div class="overview-text">
-          <div class="overview-main">
-            <div class="challenge">
+          <div class="overview-main"> 
+            <div class="challenge"> 
               <h4>Challenge</h4>
-              <!-- <div class="overlap-group"> -->
                 <p class="overview-p">
                   Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                   aliquet odio mattis.
@@ -445,9 +365,8 @@ family=Quicksand:wght@300;400;500;600;700
                   Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
                   aliquet odio mattis.
                 </p>
-              <!-- </div> -->
             </div>
-            <div class="objectives">
+            <div class="objectives"> 
               <h4>Objectives</h4>             
               <p class="overview-p">
                 Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
@@ -455,7 +374,7 @@ family=Quicksand:wght@300;400;500;600;700
               </p>
             </div>
           </div>
-          <div class="overview-side">
+          <div class="overview-side"> 
             <div class="overview-side-content">
               <div class="overview-side-text">
                 <h5>Project Scope</h5>
@@ -480,182 +399,174 @@ family=Quicksand:wght@300;400;500;600;700
             </div>
           </div>
         </div>
-        <!-- <div class="case-cta"> -->
           <a class="prototype-button" href="projects.html">View prototype</a>
-        <!-- </div> -->
       </div>
     </div>
     
-    <div class="case-design-process">
-      <div class="case-design-tile">
-        <h2>Design Process</h2>
-        <div class="workflow-frame"> 
-          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item/section tile-->
-            <div class="workflow-t">
+    <div class="section"> 
+      <div class="section-container"> 
+        <h2>Design Process</h2> 
+        <div class="workflow-frame"> <!-- section-item -->
+          <div class="workflow-item"> 
+            <div class="workflow-title-container">
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
               <h4 class="workflow-item-title">1 Research</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="">• Market Analysis</p>                  
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="">• Target Audience</p>                  
+              <li class="workflow-li">Target Audience
+              </li >
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="">• Competitor Analysis</p>                  
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="">• User Solutions</p>                  
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="">• User Solutions</p>                  
-              </li>
-              <li>
-                <p class="">• User Solutions</p>                  
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
 
-          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
-            <div class="workflow-t">
+          <div class="workflow-item"> 
+            <div class="workflow-title-container"> 
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
               </div>
               <h4 class="workflow-item-title">2 Strategy</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="">• Market Analysis</p>
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="">• Target Audience</p>
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="">• Competitor Analysis</p>
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="">• User Solutions</p>
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
 
-          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
-            <div class="workflow-t">
+          <div class="workflow-item"> 
+            <div class="workflow-title-container"> 
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
               </div>
               <h4 class="workflow-item-title">3 Design</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="">• Market Analysis</p>
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="">• Target Audience</p>
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="">• Competitor Analysis</p>
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="">• User Solutions</p>
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
 
-          <div class="workflow-item"> <!-- REUSABLE COMPONENT workflow-item-->
-            <div class="workflow-t">
+          <div class="workflow-item"> 
+            <div class="workflow-title-container"> 
               <div class="icon-container">
               <i class="fas fa-shapes "></i>
               </div>
               <h4 class="workflow-item-title">4 Prototype</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="">• Market Analysis</p>                  
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="">• Target Audience</p>                  
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="">• Competitor Analysis</p>                  
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="">• User Solutions</p>                  
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
+              </li>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
 
         </div>
 
-        <div class="research">
-          <h3>01 Research</h3> <!-- REUSABLE COMPONENT section-title -->
+        <div class="section-item"> 
+          <div class="sub-section-title"> 
+            <h3>01 Research</h3> 
+          </div>
 
-          <div class="research-item">
-            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
+          <div class="article">
+
+            <div class="article-title-container"> 
               <h4>Market Analysis</h4>
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
             </div>
-            <ul>
-              <li class="item1">• Understand the market of related platforms</li>
-              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+            <ul class="article-ul"> 
+              <li class="article-li">Understand the market of related platforms</li>
+              <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
-              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              <li class="article-li">sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
             </ul>     
           </div>
 
-          <div class="research-item">
-            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
+          <div class="article"> 
+            <div class="article-title-container"> 
               <h4>Target Audience</h4>
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
             </div>
-            <ul>
-              <li class="item1">• Understand the market of related platforms</li>
-              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+            <ul class="article-ul"> 
+              <li class="article-li">Understand the market of related platforms</li>
+              <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
-              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              <li class="article-li">sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
             </ul>     
           </div>
           
-          <div class="research-item">
-            <div class="research-item-title"><!-- REUSABLE COMPONENT section icon ul-->   
+          <div class="article"> 
+            <div class="article-title-container"> 
               <h4>Competitor Analysis</h4>            
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
             </div>
-            <ul>
-              <li class="item1">• Understand the market of related platforms</li>
-              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+            <ul class="article-ul"> 
+              <li class="article-li">Understand the market of related platforms</li>
+              <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
-              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              <li class="article-li">sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
             </ul>     
           </div>
           
-          <div class="research-item">
-            <div class="research-item-title"> <!-- REUSABLE COMPONENT section icon ul-->
-              <h4>User Solutions</h4> 
-              <div>
-
-              </div>
+          <div class="article"> 
+            <div class="article-title-container"> 
+              <h4>User Solutions</h4>
               <div class="icon-container">
                 <i class="fas fa-shapes "></i>
               </div>
             </div>
-            <ul>
-              <li class="item1">• Understand the market of related platforms</li>
-              <li class="item2">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
+            <ul class="article-ul"> 
+              <li class="article-li">Understand the market of related platforms</li>
+              <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd fads fasd dsfas df sdasdfds af asd fad sfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
-              <li class="item3">• sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
+              <li class="article-li">sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd
               dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf</li>
             </ul>     
           </div>
@@ -663,55 +574,103 @@ family=Quicksand:wght@300;400;500;600;700
           
         </div>
         
-        <div class="strategy">
-          <h3>02 Strategy</h3> <!-- REUSABLE COMPONENT section-title -->
-          <div class="strategy-item"> 
-              <div class="strategy-item-content"> <!-- REUSABLE COMPONENT section icon ul-->
-                <h4>Product Goals</h4>
-                <ul>
-                  <li class="strategy-item-li">• Understand the market of related platforms</li>
-                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
-                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
+        <div class="section-item"> 
+          <div class="sub-section-title"> 
+            <h3>02 Strategy</h3>
+          </div>
+          <div id="strategy-item" > 
+              <div id="strategy-item-content" class="article"> 
+                <div class="article-title-container"> 
+                  <h4>Product Goals</h4>
+                  <div class="icon-container">
+                    <i class="fas fa-shapes "></i>
+                  </div>
+                </div>
+                <ul class="article-ul"> 
+                  <li class="article-li">Understand the market of related platforms</li>
+                  <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
+                  <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
                 </ul>
 
               </div>
-              <div class="strategy-item-content"> <!-- REUSABLE COMPONENT section icon ul-->
-                <h4>App features</h4>
-                <ul>
-                  <li class="strategy-item-li">• Understand the market of related platforms</li>
-                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
-                  <li class="strategy-item-li">• sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
+              <div id="strategy-item-content" class="article"> 
+                <div class="article-title-container"> 
+                  <h4>App Features</h4>
+                  <div class="icon-container">
+                    <i class="fas fa-shapes "></i>
+                  </div>
+                </div>
+                <ul class="article-ul"> 
+                  <li class="article-li">Understand the market of related platforms</li>
+                  <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd </li>
+                  <li class="article-li">sdasdfdsaf asdfa dsfas d dsfasdf sdasdf dsaf asdfad sfasd dsfasdf sdasd fdsaf asd</li>
                 </ul>
               </div>
+
           </div>
-          <div class="app-map"> <!-- REUSABLE COMPONENT subtitle-p-img -->
-            <h4>Application map</h4>
+
+          <div class="article">  
+            <div class="article-title-container">
+              <h4>Application Map</h4>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
             <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
-            <div class="app-map-img-container">
+            <div class="article-image-container"> 
               <img src="resources/images/app-map.png" alt="">
             </div>
           </div>
         </div>
-        <div class="design">
-          <h3>03 Design</h3> <!-- REUSABLE COMPONENT section-title -->
-          <div class="task-flow"> <!-- REUSABLE COMPONENT subtitle-p-img -->
-            <h4>Task flow</h4>
+
+        <div class="section-item"> 
+          <div class="sub-section-title"> 
+            <h3>03 Design</h3>
+          </div>
+          <div class="article"> 
+            <div class="article-title-container">
+              <h4>Task Flow</h4>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
             <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
-            <div class="app-map-img-container">
+            <div class="article-image-container"> 
               <img src="resources/images/task-user-flow.png" alt="">
             </div>
           </div>
-          <div class="user-flow"> <!-- REUSABLE COMPONENT subtitle-p-img -->
-            <h4>User flow</h4>
+          <div class="article"> 
+            <div class="article-title-container">
+              <h4>User Flow</h4>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
             <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
-            <div class="app-map-img-container">
+            <div class="article-image-container"> 
               <img src="resources/images/task-user-flow.png" alt="">
             </div>
           </div>
-        </div>
-        <div class="prototype">
-          <h3>04 Prototype</h3>
-          <img src="resources/images/lo-fi-sketch.png" alt="">
+          <div class="article"> 
+            <div class="article-title-container">
+              <h4>Wireframe</h4>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
+            <!-- sub-article lo fi sketch -->
+            <div class="article-image-container"> 
+              <img src="resources/images/lo-fi-sketch.png" alt="">
+            </div>
+          </div>
+          
+
+        <div class="section"> 
+          <div class="sub-section-title"> 
+            <h3>04 Prototype</h3>
+          </div>
+           <img src="resources/images/lo-fi-sketch.png" alt="">
         </div>
       </div>
     </div>
