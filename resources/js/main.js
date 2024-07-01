@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   const workLink = document.getElementById("work-link");
   const dropDown = document.getElementById("nav-dropdown");
   const letsTalk = document.querySelectorAll(".talk");
-  const caseCards = document.querySelectorAll(".case-study-card")
+  const caseCards = document.querySelectorAll(".card-component")
 
   console.log("menuButton:", menuButton);
   console.log("closeMenu:", closeMenu);
@@ -34,8 +34,8 @@ window.addEventListener("load", () => {
 
   function reorderCards() {
     caseCards.forEach((card, index) => {
-      const imgFrame = card.querySelector(".img-frame");
-      const textFrame = card.querySelector(".case-text-frame");
+      const imgFrame = card.querySelector(".card-img-frame");
+      const textFrame = card.querySelector(".card-text-frame");
       if (index % 2 == 0 && window.innerWidth >= 600) {
         if (textFrame.nextElementSibling !== imgFrame) {
           card.insertBefore(textFrame, imgFrame);

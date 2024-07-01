@@ -27,19 +27,19 @@ family=Quicksand:wght@300;400;500;600;700
     crossorigin="anonymous"></script>
   <style>
     main{
+      margin: 57px 0 2rem;
+      border: 5px solid magenta;
+      /* background-color: #000; */
       display: flex;
       flex-direction: column;
       gap: 4rem;
-    }
-    .case-hero{
-      margin-top: 57px;
     }
     .section{      
       /* border: 5px solid red; */
       width: 100%;
     }
     .section-container{
-      /* border: 5px solid green; */
+      border: 5px solid green;
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
@@ -94,8 +94,9 @@ family=Quicksand:wght@300;400;500;600;700
       width: 90%;
       max-width: 640px;      
     }
-    .article-li {     
+    .article-li, .workflow-li {     
       font-size: 1.25rem;
+      color: #2F4F4F;
       list-style: disc outside;
       margin-bottom: .5rem;
     }
@@ -107,6 +108,9 @@ family=Quicksand:wght@300;400;500;600;700
       }
     }
     
+    .case-hero{
+      /* margin-top: 57px; */
+    }
     .case-hero-content h3{
       font-size: 1.5rem;
       max-width: 75%;
@@ -177,12 +181,9 @@ family=Quicksand:wght@300;400;500;600;700
       text-align: center;
       background-color: #ff9822;
       padding: .375rem;
-      /* margin-top: 4rem; */
+      margin-top: 2rem;
     }
     @media screen and (min-width: 600px) {
-      .overview h2{
-        font-size: 2.5rem
-      }
       .overview-text{
       width: 80%;
       flex-direction: row;
@@ -239,13 +240,17 @@ family=Quicksand:wght@300;400;500;600;700
       display: inline;
       margin: 0; 
     }
-
+    
     @media screen and (min-width: 600px){
       .workflow-frame{
         /* border: 5px solid; */
         display: grid;   
         grid-template-columns: repeat(2, 1fr); ;
         width: 80%;
+      }
+      .workflow-title-container{
+        justify-content: center;
+        gap: 1rem;        
       }
     }
     @media screen and (min-width: 1020px){
@@ -341,7 +346,7 @@ family=Quicksand:wght@300;400;500;600;700
   <main>
     <div class="case-hero section"> 
       <div class="case-hero-content section-container"> 
-        <h1>Branch 2</h1>
+        <h1>Project</h1>
         <h3>An end to end app packed with outstanding features</h3>
         <img class="case-hero-img" src="resources/images/tsunami-mockup-146kb.png" />
       </div>
@@ -350,8 +355,8 @@ family=Quicksand:wght@300;400;500;600;700
       <div class="section-container"> 
         <h2>Project Overview</h2> 
         <div class="overview-text">
-          <div class="overview-main">
-            <div class="challenge">
+          <div class="overview-main"> 
+            <div class="challenge"> 
               <h4>Challenge</h4>
                 <p class="overview-p">
                   Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
@@ -362,7 +367,7 @@ family=Quicksand:wght@300;400;500;600;700
                   aliquet odio mattis.
                 </p>
             </div>
-            <div class="objectives">
+            <div class="objectives"> 
               <h4>Objectives</h4>             
               <p class="overview-p">
                 Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
@@ -370,7 +375,7 @@ family=Quicksand:wght@300;400;500;600;700
               </p>
             </div>
           </div>
-          <div class="overview-side">
+          <div class="overview-side"> 
             <div class="overview-side-content">
               <div class="overview-side-text">
                 <h5>Project Scope</h5>
@@ -411,23 +416,17 @@ family=Quicksand:wght@300;400;500;600;700
               <h4 class="workflow-item-title">1 Research</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="li-inline-text">Market Analysis</p>                  
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="li-inline-text">Target Audience</p>                  
+              <li class="workflow-li">Target Audience
+              </li >
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="li-inline-text">Competitor Analysis</p>                  
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>                  
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>                  
-              </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>                  
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
@@ -440,23 +439,17 @@ family=Quicksand:wght@300;400;500;600;700
               <h4 class="workflow-item-title">2 Strategy</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="li-inline-text">Market Analysis</p>
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="li-inline-text">Target Audience</p>
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="li-inline-text">Competitor Analysis</p>
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
@@ -469,23 +462,17 @@ family=Quicksand:wght@300;400;500;600;700
               <h4 class="workflow-item-title">3 Design</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="li-inline-text">Market Analysis</p>
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="li-inline-text">Target Audience</p>
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="li-inline-text">Competitor Analysis</p>
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
@@ -498,23 +485,17 @@ family=Quicksand:wght@300;400;500;600;700
               <h4 class="workflow-item-title">4 Prototype</h4>
             </div>
             <ul class="workflow-ul">
-              <li>
-                <p class="li-inline-text">Market Analysis</p>
+              <li class="workflow-li">Market Analysis
               </li>
-              <li>
-                <p class="li-inline-text">Target Audience</p>
+              <li class="workflow-li">Target Audience
               </li>
-              <li>
-                <p class="li-inline-text">Competitor Analysis</p>
+              <li class="workflow-li">Competitor Analysis
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
-              <li>
-                <p class="li-inline-text">User Solutions</p>
+              <li class="workflow-li">User Solutions
               </li>
             </ul>
           </div>
@@ -671,13 +652,26 @@ family=Quicksand:wght@300;400;500;600;700
               <img src="resources/images/task-user-flow.png" alt="">
             </div>
           </div>
+          <div class="article"> 
+            <div class="article-title-container">
+              <h4>Wireframe</h4>
+              <div class="icon-container">
+                <i class="fas fa-shapes "></i>
+              </div>
+            </div>
+            <p>sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasdfdsaf asdfadsfasd dsfasdf sdasd fdsaf asdfa</p>
+            <!-- sub-article lo fi sketch -->
+            <div class="article-image-container"> 
+              <img src="resources/images/lo-fi-sketch.png" alt="">
+            </div>
+          </div>
           
 
-        <div class="prototype"> 
+        <div class="section"> 
           <div class="sub-section-title"> 
             <h3>04 Prototype</h3>
           </div>
-          <img src="resources/images/lo-fi-sketch.png" alt="">
+           <img src="resources/images/lo-fi-sketch.png" alt="">
         </div>
       </div>
     </div>
