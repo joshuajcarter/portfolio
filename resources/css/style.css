@@ -78,7 +78,7 @@ button {
 }
 
 .nav-bar,
-.container ul,
+.dropdown-container ul,
 .design-banner-content,
 .section-content,
 .projects-section,
@@ -98,26 +98,26 @@ button {
 
 /*----- main nav styles when sticky nav disabled -----*/
 .main-nav {
+	background-color: #fff;
 	position: fixed;
 	z-index: 100;
 	top: 0;
 	width: 100%;
-	padding: .25rem 0;
+	/* padding: .25rem; */
 	border-bottom: 1px solid #f9f9f9;
-
 }
-.nav-bar {
-	background-color: #fff;
-	height: 3rem;
+.nav-bar {	
+	/* height: 3rem; */
 	display: flex;
 	justify-content: center;
 	align-items: center; 
+	padding: .75rem 2rem .75rem 1rem;
+	/* desktop */
+	/* padding: .25rem 2rem; */
 }
-
 .logo {
 	font-size: 1.5rem;
-	flex-grow: 1;
-	padding-left: 1rem;
+	flex: 1;
 }
 
 .fa-bars, .fa-times {
@@ -127,16 +127,13 @@ button {
 	font-size: 1.5rem;
 	padding: .375rem;
 	border-radius: 6px;
-	margin-right: 2rem;
 	float: right;
 	cursor: pointer;
 }
-
 .fa-times {
 	padding: .375rem .550rem;
 }
-
-.nav-menu .container {
+.dropdown-container {
 	width: 100%;
 	background-color: rgba(47, 79, 79, 0.9); /*-----#2f4f4f-----*/
 	padding: 1.5em;
@@ -144,34 +141,28 @@ button {
 	position: absolute;
 	z-index: 1000; 
 } 	
-
-#link-list {
+#nav-menu-ul {
 	font-size: 3rem;
 	color: #fff;
 	text-align: right;
 	text-transform: uppercase;
 	margin-bottom: 2rem;
 }
-
-#link-list a:hover {
+#nav-menu-ul a:hover {
 	color: #ff9822;
 }
-
 .desktop-nav li{
 	display: none;
 }
-
-.contact-list {
+.nav-contact-ul {
 	font-size: 1.125rem;
 	line-height: 3;
 	letter-spacing: 1.5px;
 }
-
-.contact-list li {
+.nav-contact-ul li {
 	padding-top: 2rem;
 	line-height: 2rem;
 }
-
 li#lets-talk {
 	font-size: 1.75rem;
 	text-transform: uppercase;
@@ -179,14 +170,13 @@ li#lets-talk {
 	border-top: 1px solid #fff;
 	margin-bottom: 0;
 }
-
 #lets-talk, 
-.contact-list a,
+.nav-contact-ul a,
 .contact-details h2,
 .contact-details a {
 	color: #ff9822; 
 }
-.contact-list span {
+.nav-contact-ul span {
 	color: #fff;	
 }
 
@@ -203,12 +193,12 @@ li#lets-talk {
   border-bottom: 1px solid #f9f9f9;
 }
 @media screen and (max-height: 520px) {
-	.nav-menu .container {
+	.dropdown-container {
 		display: flex;
 		flex-direction: row-reverse;
-		max-height: 86vh;
+		max-height: 87vh;
 	}
-	#link-list {
+	#nav-menu-ul {
 		height: 100%;
 	}
 	li#lets-talk {
@@ -224,13 +214,13 @@ li#lets-talk {
 /*------hero banner-------*/
 
 .hero-banner{
-	padding-top: 57px; /* nav offset */ 
+	padding-top: 60px; /* nav offset */ 
 	min-height: 100vh;
 	background-image: url(../images/hero-jigsaw.jpg);
 	background-position: left top;
 	background-size: cover;
 	background-color: #ff9a24;	
-	flex-grow: 1;
+	/* flex-grow: 1; */
 	display: flex;
 	flex-direction: column;	
 	justify-content: space-evenly;
