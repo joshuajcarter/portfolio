@@ -28,7 +28,7 @@ family=Quicksand:wght@300;400;500;600;700
     <style>
       main{
         /* border: 5px solid magenta; */
-        margin: 57px 0 2rem;
+        margin: 60px 0 2rem;
         display: flex;
         flex-direction: column;
         gap: 4rem;
@@ -211,52 +211,40 @@ family=Quicksand:wght@300;400;500;600;700
 -->
 
         <!--add #main-nav js var header-->
-        <div class="main-nav" id="main-nav"><!--100vw padding top bottom-->
-
-          <div class="nav-bar"><!--max 1280px-->
-            <!--style this-->
-            <div class="logo">
-              <a id="home-link" href="index.html">Joshua J. Carter</a>
-            </div>
-            <div>
-              <!--add .menu-button jq $menuButton-->
-              <div id='menu-button'>
-                <i class="fas fa-bars fa-lg"></i>
+              <div class="main-nav">
+                <div class="nav-bar">
+                  <div class="logo">
+                    <a id="home-link" href="index.html">Joshua J. Carter</a>
+                  </div>
+                  <div id='menu-button'>
+                    <i class="fas fa-bars fa-lg"></i>
+                  </div>
+                  <div id="close-menu-button" class='hide'>
+                    <i class="fas fa-times"></i>
+                  </div>
+                </div>
+                <!-- Nav Menu -->
+                <div class='nav-menu hide' id='nav-dropdown'>
+                  <div class='dropdown-container'>
+                    <ul id="nav-menu-ul">
+                      <!--<li><a href="">About</a></li>-->
+                      <li><a id="work-link" href="#work-anchor">Work</a></li>
+                      <!--<li><a href="">Services</a></li>-->
+                      <!--<li><a href="">Journal/News & Views</a></li>-->
+                      <li><a id="contact-link" href="contact.html">Contact</a></li>
+                      <!-- <li class="hide"><a href="">Search icon</a></li> -->
+                    </ul>
+                    <ul class="nav-contact-ul">
+                      <li id="lets-talk">let's talk</li>
+                      <li><a href="mailto:client@joshuajcarter.com">Client enquiries<br><span>client@joshuajcarter.com</span></a></li>
+                      <li><a href="mailto:enquiry@joshuajcarter.com">General enquiries<br><span>enquiry@joshuajcarter.com</span></a>
+                      </li>
+                    </ul>
+              
+                  </div>
+              
+                </div>
               </div>
-            </div>
-            <div>
-              <!--add .menu-button jq $menuButton-->
-              <!-- <div id="close-menu-button"> -->
-              <div id="close-menu-button" class='hide'>
-                <i class="fas fa-times"></i>
-              </div>
-            </div>
-          </div> <!--nav-bar-->
-
-          <!-- Nav Menu -->
-          <div class='nav-menu hide' id='nav-dropdown'>
-            <div class='container'>
-              <ul id="link-list">
-                <!--<li><a href="">About</a></li>-->
-                <li><a id="work-link" href="#work-anchor">Work</a></li>
-                <!--<li><a href="">Services</a></li>-->
-                <!--<li><a href="">Journal/News & Views</a></li>-->
-                <li><a id="contact-link" href="contact.html">Contact</a></li>
-                <li class="hide"><a href="">Search icon</a></li>
-              </ul>
-              <ul class="contact-list">
-                <li id="lets-talk">let's talk</li>
-                <li><a href="mailto:client@joshuajcarter.com">Client
-                    enquiries<br><span>client@joshuajcarter.com</span></a></li>
-                <li><a href="mailto:enquiry@joshuajcarter.com">General
-                    enquiries<br><span>enquiry@joshuajcarter.com</span></a></li>
-              </ul>
-
-            </div>
-
-          </div><!--.nav-menu .hide #nav-dropdown-->
-
-        </div><!--.main-nav #main-nav-->
 
         <!--empty div sticky spacer-->
         <!--
