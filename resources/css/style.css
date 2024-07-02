@@ -47,12 +47,11 @@ h1, h2, h3, h4, h5,p, #home-link {
 
 p {
 	font-size: 1.25rem;
-}
-
+} 
+	
 img{
 	max-width: 100%;
 	display: block;
-
 }
 
 a {
@@ -67,9 +66,32 @@ button {
 	cursor: pointer;
 }
 
+/*  component rules */
+.section {
+	/* border: 5px solid red; */
+	width: 100%;
+}
+.section-container {
+	/* border: 5px solid green; */
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	gap: 4rem;
+}
+.section-item {
+	/* border: 5px solid orange; */
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 /*=====set max width values=====*/
 
-.main-nav, .section-container{
+.main-nav, .intro-section-container{
 	background-color: #fff;
 }
 
@@ -119,7 +141,6 @@ button {
 	font-size: 1.5rem;
 	flex: 1;
 }
-
 .fa-bars, .fa-times {
 	box-sizing: content-box;
 	color: #fff;
@@ -179,19 +200,19 @@ li#lets-talk {
 .nav-contact-ul span {
 	color: #fff;	
 }
-
-/*add class .onscroll function*/     
+   
+/* add class .onscroll function
 .topPadding {
   margin-top: 3rem;
 }
-
 .sticky {
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
   border-bottom: 1px solid #f9f9f9;
-}
+} */
+
 @media screen and (max-height: 520px) {
 	.dropdown-container {
 		display: flex;
@@ -212,38 +233,31 @@ li#lets-talk {
 }
 
 /*------hero banner-------*/
-
-.hero-banner{
-	padding-top: 60px; /* nav offset */ 
+.hero-banner {
+	padding-top: 60px;
 	min-height: 100vh;
 	background-image: url(../images/hero-jigsaw.jpg);
-	background-position: left top;
 	background-size: cover;
-	background-color: #ff9a24;	
-	/* flex-grow: 1; */
-	display: flex;
-	flex-direction: column;	
-	justify-content: space-evenly;
+	background-color: #ff9a24;
 }
 
-.hero-grabline-landscape {
-	margin: 0 auto;
+.hero-banner .section-container {
+	height: 85vh;
+	justify-content: space-evenly;
+	gap: 0;
 }
 
 .hero-grabline-landscape h1 {
-	display: flex;
-	flex-direction: column;
 	font-size: 3rem;
 }
 
-#hero-make, 
+#hero-make,
 #hero-ideas,
 #hero-happen {
 	color: #2F4F4F;
 	opacity: 0;
 	transition: opacity 1.8s ease 500ms;
-	padding-right: 1.5rem;
-	margin: auto; 
+	margin: auto;
 }
 
 #hero-ideas {
@@ -254,37 +268,52 @@ li#lets-talk {
 	transition: opacity 2.2s ease 2.6s;
 }
 
-.hero-tagline, .intro-paragraph, .intro-text-flex, .projects-text {
-	max-width: 70%; /*-----resize max-width .hero-tagline, .intro-paragraph, .intro-text-flex, .projects-text-----*/
-	margin: 0 auto;
+.hero-tagline {
+	max-width: 65%;
 }
 
-.hero-tagline h3{
+.hero-tagline h3 {
 	color: #fff;
 	font-size: 1.5rem;
 }
 
+.chevron {
+	color: #fff;
+	cursor: pointer;
+}
+
 @media screen and (orientation: landscape) {
-	.hero-grabline-landscape h1{
+	.section.hero-banner {
+		/* desktop */
+		justify-content: space-evenly;
+	}
+	.hero-grabline-landscape h1 {
 		display: inline;
+	}
+	#hero-make,
+	#hero-ideas,
+	#hero-happen {
+		padding-right: 1.5rem;
 	}
 }
 
 @media screen and (min-width: 767px) {
-	.hero-grabline-landscape h1{
+	.hero-grabline-landscape h1 {
 		font-size: 4rem;
 	}
 	.hero-tagline h3 {
 		font-size: 2rem;
 	}
 }
+
 @media screen and (min-width: 1023px) {
-	.hero-grabline-landscape h1{
+	.hero-grabline-landscape h1 {
 		font-size: 5.5rem;
 	}
 }
+
 @media screen and (max-width: 260px) {
-	.hero-grabline-landscape h1{
+	.hero-grabline-landscape h1 {
 		font-size: 2.5rem;
 	}
 	.hero-tagline h3 {
@@ -292,12 +321,9 @@ li#lets-talk {
 	}
 }
 
-.chevron{
-	display: inline-block;
-	color: #fff;
-	/* border: 5px solid magenta; */
+.intro-paragraph, .intro-text-flex, .projects-text {
+	max-width: 70%; 
 	margin: 0 auto;
-	cursor:  pointer;
 }
 
 /*--------creating quality--------*/
@@ -987,9 +1013,9 @@ footer p,
 }
 
 @media screen and (min-width: 768px) {
-	.section-container{
+	/* .section-container{
 		padding: 0;
-	}
+	} */
 	.section-content,
 	.projects-section-content {		
 		display: flex;
