@@ -26,97 +26,7 @@ family=Quicksand:wght@300;400;500;600;700
     integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
     crossorigin="anonymous"></script>
     <style>
-      main{
-        /* border: 5px solid magenta; */
-        margin: 60px 0 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-      }
-      .section{      
-      /* border: 5px solid red; */
-        width: 100%;
-      }
-      .section-container{
-        /* border: 5px solid green; */
-        max-width: 1280px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-      }
-      .section-item{
-        /* border: 5px solid orange; */
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* gap: 10rem; */
-      }
-      .section-item>*{
-      }
-      /* card-container */
-      .card-component {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
-        background-color: #ffffff;
-        justify-items: center;
-        gap: 2rem;
-      }
-      .card-component>*{
-        /* border: 5px solid slateblue; */
-      }
-      .card-img-frame{
-        /* border: 5px solid hotpink; */
-      }
-      .image-medium{
-        border-radius: 50%;
-      }
-      .card-text-frame{
-        /* border: 5px solid yellow; */
-        height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;  
-        align-items: center;
-        gap: 2rem;
-      }
-      .card-text{
-        /* border: 5px solid aqua; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: .5rem;
-      }
-      .card-text h3{
-        font-weight: bold;
-      }
-      .card-text p span {
-        font-weight: bold;
-      }
-      .card-button{
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 1.375rem;
-        text-align: center;
-        background-color: #ff9822;
-        padding: .375rem;
-      }
-      @media screen and (min-width: 600px){
-      .article p, .article-image-container{
-        /* border: 5px solid orchid; */
-        max-width: 675px;
-      }
-      .card-component {
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(1, 1fr);     
-      }
-    }
+      
       .hero-image-tilt{
         /* border: 5px solid blue;   */
         position:relative; /* required for .overlap position:absolute centre rotate*/
@@ -288,15 +198,14 @@ family=Quicksand:wght@300;400;500;600;700
                     <img class="image-medium" src="resources/images/glasses-square-1050.jpg" />
                   </div>
                 </div>
-                <!-- refactor index.html projects section component -->
                 <div class="card-text-frame">
                   <div class="card-text">
-                    <h3>Title</h3> <!--projects-section-title-->
+                    <h3>Title</h3> 
                     <p><span>An end to end app packed with features</span></p>
                     <p>A bespoke professional design.</p>
                   </div>
-                  <div class="card-cta">
-                    <a class="card-button" href="case-study.html">Case study</a>
+                  <div class="cta">
+                    <button class="cta-button projects-button"><a class="" href="case-study.html">Case study</a></button>
                   </div>
                 </div>        
               <!-- </div> -->
@@ -314,8 +223,8 @@ family=Quicksand:wght@300;400;500;600;700
                     <p><span>An end to end app packed with features</span></p>
                     <p>A bespoke professional design.</p>
                   </div>
-                  <div class="card-cta">
-                    <a class="card-button" href="case-study.html">Case study</a>
+                  <div class="cta">
+                    <button class="cta-button projects-button"><a class="" href="case-study.html">Case study</a></button>
                   </div>
                 </div>        
               <!-- </div> -->
