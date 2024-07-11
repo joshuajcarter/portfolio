@@ -1,237 +1,232 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-<title>Tsunami Coffee | Joshua J. Carter</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<title>Tsunami Coffee | Joshua J. Carter</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
-<!--google font-->
+	<!--google font-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!--add #projectName-project-logo-font google fonts -->
+	<!--add #projectName-project-logo-font google fonts -->
 
-<link href="https://fonts.googleapis.com/css2?
+	<link href="https://fonts.googleapis.com/css2?
 
 family=Quicksand:wght@300;400;500;600;700
 
 &family=Syne
 
-&display=swap"
+&display=swap" rel="stylesheet">
 
-rel="stylesheet">
+	<!--link tags from favicon.io-->
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon_io/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon_io/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 
-<!--link tags from favicon.io-->
-<link rel="apple-touch-icon" sizes="180x180" href="resources/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="resources/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="resources/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<!--fontawesome-->
-<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+	<!--fontawesome-->
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+		integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+		crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-<header>
+	<header>
 
-	<nav class="header-nav">
+		<nav class="header-nav">
 
-		<div class="sticky-nav">
+			<div class="sticky-nav"> <!-- TODO -->
 
-			<!--sticky spacer-->
-<!--
-			<div class="top-container">			
-			</div>
--->
-
-			<!--add #main-nav js var header-->
-			<div class="main-nav">
-				<div class="nav-bar">
-					<div class="logo">
-						<a id="home-link" href="index.html">Joshua J. Carter</a>
+				<div class="main-nav">
+					<div class="nav-bar">
+						<div class="logo">
+							<a id="home-link" href="index.html">Joshua J. Carter</a>
+						</div>
+						<div id='menu-button'>
+							<i class="fas fa-bars fa-lg"></i>
+						</div>
+						<div id="close-menu-button" class='hide'>
+							<i class="fas fa-times"></i>
+						</div>
 					</div>
-					<div id='menu-button'>
-						<i class="fas fa-bars fa-lg"></i>
-					</div>
-					<div id="close-menu-button" class='hide'>
-						<i class="fas fa-times"></i>
+					<!-- Nav Menu -->
+					<div class='nav-menu hide' id='nav-dropdown'>
+						<div class='dropdown-container'>
+							<ul id="nav-menu-ul">
+								<!--<li><a href="">About</a></li>-->
+								<li><a id="work-link" href="#work-anchor">Work</a></li>
+								<!--<li><a href="">Services</a></li>-->
+								<!--<li><a href="">Journal/News & Views</a></li>-->
+								<li><a id="contact-link" href="contact.html">Contact</a></li>
+								<!-- <li class="hide"><a href="">Search icon</a></li> -->
+							</ul>
+							<ul class="nav-contact-ul">
+								<li id="lets-talk">let's talk</li>
+								<li><a href="mailto:client@joshuajcarter.com">Client
+										enquiries<br><span>client@joshuajcarter.com</span></a></li>
+								<li><a href="mailto:enquiry@joshuajcarter.com">General
+										enquiries<br><span>enquiry@joshuajcarter.com</span></a>
+								</li>
+							</ul>
+
+						</div>
+
 					</div>
 				</div>
-				<!-- Nav Menu -->
-				<div class='nav-menu hide' id='nav-dropdown'>
-					<div class='dropdown-container'>
-						<ul id="nav-menu-ul">
-							<!--<li><a href="">About</a></li>-->
-							<li><a id="work-link" href="#work-anchor">Work</a></li>
-							<!--<li><a href="">Services</a></li>-->
-							<!--<li><a href="">Journal/News & Views</a></li>-->
-							<li><a id="contact-link" href="contact.html">Contact</a></li>
-							<!-- <li class="hide"><a href="">Search icon</a></li> -->
-						</ul>
-						<ul class="nav-contact-ul">
-							<li id="lets-talk">let's talk</li>
-							<li><a href="mailto:client@joshuajcarter.com">Client enquiries<br><span>client@joshuajcarter.com</span></a></li>
-							<li><a href="mailto:enquiry@joshuajcarter.com">General enquiries<br><span>enquiry@joshuajcarter.com</span></a>
-							</li>
-						</ul>
-			
-					</div>
-			
+
+			</div><!--.sticky-nav-->
+
+		</nav><!--.header-nav-->
+
+	</header>
+
+	<main>
+		<!-- new -->
+		<!-- TODO -->
+		<section class="section project-hero">
+			<div class="project-title-hero">
+				<div class="project-logo tsunami-logo">
+					<img src="resources/images/tsunami-logo-circle-solid.png"
+						alt="Tsunami Coffee logo roundel and coffee pot icon">
+					<p id="tsunami-font">great coffee does not happen by accident.</p>
 				</div>
-			</div>
-
-			<!--empty div sticky spacer-->
-<!--
-			<div class="top-container" id="topContainer">			    
-			</div>
--->
-
-		</div><!--.sticky-nav-->
-
-	</nav><!--.header-nav-->
-
-</header>
-
-
-<main>
-	<section class="project-title tsunami">
-		<!--<h3 class="mini-strap">Projects</h3>-->
-		<!--<h3>Tsunami Coffee</h3>-->
-		<div class="project-title-hero">
-			<div class="project-logo tsunami-logo">
-				<img  src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
-				<p id="tsunami-font">great coffee does not happen by accident.</p>
-			</div>
 				<img id="project-imac-mockup" src="resources/images/130kb-imac-tsunami-mockup.png">
-		</div>
-		<div class="at-a-glance-bg-color">
-			<div class="at-a-glance">
-				<h4>At a glance -</h4>
-				<!--<i class="far fa-comments" id="project-icon" ></i>
-				<i class="fas fa-icons" id="project-icon"></i>
-				<i class="fas fa-hand-sparkles" id="project-icon"></i>
-				<i class="fas fa-gift" id="project-icon"></i>-->
-					<div class="at-a-glance-list">
-						<ul>
-							<li><i class="far fa-comments" id="project-icon" ></i><p>Complete website re-design</p></li>
-							<li><i class="fas fa-icons" id="project-icon"></i><p>Fully responsive and social media ready</p></li>
-							<li><i class="fas fa-hand-sparkles" id="project-icon"></i><p>Hand-built custom HTML, CSS, and Flexbox</p></li>
-							<li><i class="fas fa-gift" id="project-icon"></i><p>View live on Github pages <a target="_blank" href="https://joshuajcarter.github.io/project-tsunami-coffee/">here</a></p></li>
-						</ul>
+			</div>
+		</section>
+
+		<section class="section project-summary">
+			<div class="section-container">
+				<h2 class="section-container-title">At A Glance</h2>
+				<div class="grid-frame">
+					<div class="grid-item work-grid-item">
+						<div class="grid-title-container">
+							<div class="icon-container">
+								<i class="far fa-comments"></i>
+							</div>
+							<p class="grid-item-title">Complete website re-design</p>
+						</div>
 					</div>
+					<div class="grid-item work-grid-item">
+						<div class="grid-title-container">
+							<div class="icon-container">
+								<i class="fas fa-icons"></i>
+							</div>
+							<p class="grid-item-title">Fully responsive and social media ready</p>
+						</div>
+					</div>
+					<div class="grid-item work-grid-item">
+						<div class="grid-title-container">
+							<div class="icon-container">
+								<i class="fas fa-hand-sparkles"></i>
+							</div>
+							<p class="grid-item-title">Hand-built custom HTML, CSS, and Flexbox</p>
+						</div>
+					</div>
+					<div class="grid-item work-grid-item">
+						<div class="grid-title-container">
+							<div class="icon-container">
+								<i class="fas fa-gift"></i>
+							</div>
+							<p class="grid-item-title">View live on Github pages <a target="_blank"
+									href="https://joshuajcarter.github.io/project-tsunami-coffee/">here</a></p>
+						</div>
+					</div>
+				</div>
+				<img class="section-container-img" src="resources/images/tsunami-mockup-146kb.png">
+				<div class="section-item">
+					<div class="cta">
+						<button><a class="cta-button talk">Let's talk</a></button>
+					</div>
+				</div>
 			</div>
+		</section>
 
-			<!--<img src="resources/images/tsunami-home-screenshot.jpg"-->
-			
-			<img id="project-macbook-mockup" src="resources/images/tsunami-mockup-146kb.png">
-			<div class="cta">
-				<button class="cta-button talk">Let's talk</button>
-				<!--<a class="cta-button" href="">My work</a>-->		
+		<section class="section project-about">
+			<div class="section-container">
+				<div class="section-item project-about-item">
+					<h3 class="section-item-title">About</h3>
+					<div class="sub-section">
+						<div class="sub-section-title">
+							<h3>Time For A Perk-Up.</h3>
+						</div>
+						<div class="article">
+							<p>Tsunami Coffee's website loaded slow, lacked features, and was not designed for mobile viewing. It was
+								time to perk
+								things up with a double shot of modern, responsive web design.</p>
+
+							<div class="article-image-container">
+								<img src="resources/images/177kb-tsunami-gallery.png">
+							</div>
+						</div>
+					</div>
+					<div class="sub-section">
+						<div class="sub-section-title">
+							<h3>Rich, Bold, and Smooth.</h3>
+						</div>
+						<div class="article">
+							<p>My redesign looks great and loads quickly on all devices with optimized images, a fresh colour and
+								texture palette,
+								upgraded font styles and a new logo to make the site really sit up.</p>
+							<div class="article-image-container">
+								<img src="resources/images/130kb-imac-tsunami-mockup.png">
+							</div>
+							<p>The custom code was completely rewritten to modern semantic and responsive specifications, including a
+								new navigation
+								menu, new header and footer sections, neat icon links to popular social media platforms, and a cute new
+								icon in the
+								browser tab.</p>
+						</div>
+					</div>
+					<div class="sub-section">
+						<div class="sub-section-title">
+							<h3>Coffees All Round.</h3>
+						</div>
+						<div class="article">
+							<p>My redesign packages are competitively priced and tailored to your requirements. Contact me now if your
+								existing website
+								could use a caffeine shot, or if you need a new website built from scratch, I can help with that too.
+							</p>
+							<div class="article-image-container">
+								<img src="resources/images/tsunami-mockup-146kb.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-item">
+					<div class="cta double-cta">
+						<button class="cta-button"><a href="contact.html">Let's talk</a></button>
+						<button class="next-button"><a href="index.html#work-anchor">Back</a></button>
+					</div>
+				</div>
 			</div>
-		</div>
-	</section>
-	
-<!--
-	<section class="projects-section section-container">
-		<h3 class="mini-strap">Projects</h3>
-		<div class="project-text">
-			<h3>Tsunami Coffee</h3>
-		</div>
-		<div class="project-title-img-container">
-			<img id="project-logo" src="resources/images/tsunami-logo-circle-solid.png" alt="Tsunami Coffee logo roundel and coffee pot icon">
-			<img id="project-imac-mockup" src="resources/images/130kb-imac-tsunami-mockup.png">
-		</div>
-		<div class="project-text">
-			<p><span>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</span></p>
-			<p>Adipiscing elit. Morbi enim arcu, pharetra tempor dictum et, eleifend sed elit.</p>
-		</div>
-		<div class="project-img">
-			<img src="resources/images/tsunami-mockup-146kb.png" alt="">
-		</div>
-		<div class="cta">
-			<a class="projects-button" href="">View project</a>
-		</div>			
-	</section>
--->
-	<section class="about-project">
-		<h4>About project -</h4>
-		<h3>Time For A Perk-Up.</h3>
-		<div class="about-project-paragraph">			
-			<p>Tsunami Coffee's website loaded slow, lacked features, and was not designed for mobile viewing. It was time to perk things up with a double shot of modern, responsive web design.</p>
-			<img src="resources/images/177kb-tsunami-gallery.png">
-		</div>
-		<h3>Rich, Bold, and Smooth.</h3>			
-			<p>My redesign looks great and loads quickly on all devices with optimized images, a fresh colour and texture palette, upgraded font styles and a new logo to make the site really sit up.</p>
-			<img src="resources/images/130kb-imac-tsunami-mockup.png">
-			<p>The custom code was completely rewritten to modern semantic and responsive specifications, including a new navigation menu, new header and footer sections, neat icon links to popular social media platforms, and a cute new icon in the browser tab.</p>  
-			
+		</section>
 
-		<h3>Coffees All Round.</h3>
-		<div class="about-project-paragraph" id="about-project-paragraph-last">
-			<p>My redesign packages are competitively priced and tailored to your requirements. Contact me now if your existing website could use a caffeine shot, or if you need a new website built from scratch, I can help with that too.</p>
-			<img src="resources/images/tsunami-mockup-146kb.png" id="project-image-4">
-		</div>
-		
-		<div class="cta">
-		<button class="cta-button"><a href="contact.html">Let's talk</a></button>
-		<button class="next-button"><a href="index.html#work-anchor">Back</a></button>
-<!--
-			<button class="next-button"><a href="project-template.html">Next</a></button>
--->		
-		</div>
-			
-	</section>
+	</main>
 
-</main>
+	<footer>
+		<section class="footer-content">
+			<p>Design &#38; code by Joshua J. Carter</p>
+			<p>&copy; 2024. All rights reserved</p>
+			<nav>
+				<ul class="footer-nav">
+					<li><a href="index.html">home</a></li>
+					<li><a href="#work-anchor">work</a></li>
+					<li><a href="contact.html">contact</a></li>
+					<li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter/portfolio" href>view
+							code</a></li>
+				</ul>
+			</nav>
+		</section>
+	</footer>
 
-<footer>
+	<script type="text/javascript" src='resources/js/main.js'></script>
 
-	<section class="footer-content">
-
-<!-- disabled socials icons		
-		<nav >
-			<ul class="footer-icon-nav">
-				<li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter"><i class="fab fa-github-square"></i></a></li>
-				<li><a title="View Facebook" target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-				<li><a title="View Twitter" target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
-				<li><a title="View Instagram" target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
-
-			</ul>
-		</nav>
--->		
-
-		<p>Design &#38; code by Joshua J. Carter</p>
-		<p>&copy; 2024.  All rights reserved</p>
-		<nav>
-			<ul class="footer-nav">
-				<li><a href="index.html">home</a></li>
-				<li><a href="#work-anchor">work</a></li>
-				<li><a href="contact.html">contact</a></li>
-				<li><a title="View Github" target="_blank" href="https://github.com/joshuajcarter/portfolio"href>view code</a></li>
-				<!--li><a>donate</a></li-->
-			</ul>
-		</nav>
-
-	</section>
-
-</footer>
-
-<script type="text/javascript" src='resources/js/main.js'></script>
-
-<!--reference jQuery Library DISABLED-->
-<!-- <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
-</script>  -->
-<!--include external JQuery file-->
-<!-- <script type="text/javascript" src='resources/js/jquery.js'></script> -->
-	
 </body>
 
 </html>
-
