@@ -25,358 +25,123 @@ family=Quicksand:wght@300;400;500;600;700
   <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
     integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
     crossorigin="anonymous"></script>
-    <style>
-      main{
-        /* border: 5px solid magenta; */
-        margin: 60px 0 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-      }
-      .section{      
-      /* border: 5px solid red; */
-        width: 100%;
-      }
-      .section-container{
-        /* border: 5px solid green; */
-        max-width: 1280px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-      }
-      .section-item{
-        /* border: 5px solid orange; */
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* gap: 10rem; */
-      }
-      .section-item>*{
-      }
-      /* card-container */
-      .card-component {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
-        background-color: #ffffff;
-        justify-items: center;
-        gap: 2rem;
-      }
-      .card-component>*{
-        /* border: 5px solid slateblue; */
-      }
-      .card-img-frame{
-        /* border: 5px solid hotpink; */
-      }
-      .image-medium{
-        border-radius: 50%;
-      }
-      .card-text-frame{
-        /* border: 5px solid yellow; */
-        height: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;  
-        align-items: center;
-        gap: 2rem;
-      }
-      .card-text{
-        /* border: 5px solid aqua; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap: .5rem;
-      }
-      .card-text h3{
-        font-weight: bold;
-      }
-      .card-text p span {
-        font-weight: bold;
-      }
-      .card-button{
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 1.375rem;
-        text-align: center;
-        background-color: #ff9822;
-        padding: .375rem;
-      }
-      @media screen and (min-width: 600px){
-      .article p, .article-image-container{
-        /* border: 5px solid orchid; */
-        max-width: 675px;
-      }
-      .card-component {
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(1, 1fr);     
-      }
-    }
-      .hero-image-tilt{
-        /* border: 5px solid blue;   */
-        position:relative; /* required for .overlap position:absolute centre rotate*/
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        background-color: orange;
-        z-index: 1;
-      }
-      .hero-text-frame {
-        max-width: 1280px;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        padding: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        z-index: 11;
-        background-color: rgba(0, 0, 0, 0.15);
-      }
-      .hero-text{
-        color: #ffffff;
-        font-weight: bold;
-        padding-left: 5%;
-      }
-      .hero-text-frame h1 {
-        font-size: xx-large;
-      }
-      .hero-text-frame h2 {
-        font-size: x-large;
-      }
-      .hero-text-frame h3 {
-        font-size: large;
-      }
-      .overlap {
-        width: 200%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: repeat(2, 1fr); 
-        gap: 10px; 
-
-        /* centre rotate within .hero-image-tilt */
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform-origin: center;
-        transform:  translate(-50%, -50%) rotate(20deg); 
-      }
-      .overlap-group {
-        display: contents; /* place images directly in the .overlap grid */
-      }
-      .overlap-group img {
-        width: 100%;
-        height: auto; 
-      }      
-
-      @media screen and (min-width: 600px) {
-        .hero-image-tilt{
-          height: 80vh;
-        }
-        .overlap {
-          width: 160%;
-        }
-        .hero-text-frame{
-          left: 5%;
-          width: 360px;
-          height: 360px;
-          border-radius: 50%;
-          padding: 2%;
-        }      
-      }
-    </style>
 </head>
 
 <body>
-
   <header>
-
     <nav class="header-nav">
-
       <div class="sticky-nav">
-
-        <!--sticky spacer-->
-        <!--
-			<div class="top-container">			
-			</div>
--->
-
-        <!--add #main-nav js var header-->
-              <div class="main-nav">
-                <div class="nav-bar">
-                  <div class="logo">
-                    <a id="home-link" href="index.html">Joshua J. Carter</a>
-                  </div>
-                  <div id='menu-button'>
-                    <i class="fas fa-bars fa-lg"></i>
-                  </div>
-                  <div id="close-menu-button" class='hide'>
-                    <i class="fas fa-times"></i>
-                  </div>
-                </div>
-                <!-- Nav Menu -->
-                <div class='nav-menu hide' id='nav-dropdown'>
-                  <div class='dropdown-container'>
-                    <ul id="nav-menu-ul">
-                      <!--<li><a href="">About</a></li>-->
-                      <li><a id="work-link" href="#work-anchor">Work</a></li>
-                      <!--<li><a href="">Services</a></li>-->
-                      <!--<li><a href="">Journal/News & Views</a></li>-->
-                      <li><a id="contact-link" href="contact.html">Contact</a></li>
-                      <!-- <li class="hide"><a href="">Search icon</a></li> -->
-                    </ul>
-                    <ul class="nav-contact-ul">
-                      <li id="lets-talk">let's talk</li>
-                      <li><a href="mailto:client@joshuajcarter.com">Client enquiries<br><span>client@joshuajcarter.com</span></a></li>
-                      <li><a href="mailto:enquiry@joshuajcarter.com">General enquiries<br><span>enquiry@joshuajcarter.com</span></a>
-                      </li>
-                    </ul>
-              
-                  </div>
-              
-                </div>
+          <div class="main-nav">
+            <div class="nav-bar">
+              <div class="logo">
+                <a id="home-link" href="index.html">Joshua J. Carter</a>
               </div>
-
-        <!--empty div sticky spacer-->
-        <!--
-			<div class="top-container" id="topContainer">			    
-			</div>
--->
-
-      </div><!--.sticky-nav-->
-
-    </nav><!--.header-nav-->
+              <div id='menu-button'>
+                <i class="fas fa-bars fa-lg"></i>
+              </div>
+              <div id="close-menu-button" class='hide'>
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <!-- Nav Menu -->
+            <div class='nav-menu hide' id='nav-dropdown'>
+              <div class='dropdown-container'>
+                <ul id="nav-menu-ul">
+                  <!--<li><a href="">About</a></li>-->
+                  <li><a id="work-link" href="#work-anchor">Work</a></li>
+                  <!--<li><a href="">Services</a></li>-->
+                  <!--<li><a href="">Journal/News & Views</a></li>-->
+                  <li><a id="contact-link" href="contact.html">Contact</a></li>
+                  <!-- <li class="hide"><a href="">Search icon</a></li> -->
+                </ul>
+                <ul class="nav-contact-ul">
+                  <li id="lets-talk">let's talk</li>
+                  <li><a href="mailto:client@joshuajcarter.com">Client enquiries<br><span>client@joshuajcarter.com</span></a></li>
+                  <li><a href="mailto:enquiry@joshuajcarter.com">General enquiries<br><span>enquiry@joshuajcarter.com</span></a>
+                  </li>
+                </ul>              
+              </div>              
+            </div>
+          </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <!-- <div class="showcase"> -->
-      <!-- <div class="div"> -->
-        <div class="hero-image-tilt"> <!--section width 100%-->
-          <div class="hero-text-frame">
-            <h1 class="hero-text">this is the hero h1</h1>
-            <h2 class="hero-text">this is the hero h2</h2>
-            <h3 class="hero-text">this is the hero h3</h3>
+    <div class="hero-image-tilt"> 
+      <div class="hero-text-frame">
+        <h1 class="hero-text">this is the hero h1</h1>
+        <h2 class="hero-text">this is the hero h2</h2>
+        <h3 class="hero-text">this is the hero h3</h3>
+      </div>
+      <!-- <div class="flex"> -->
+        <div class="overlap">
+          <div class="overlap-group">          
+            <img class="" src="resources/images/glasses-h1050.jpg" />
+            <img class="" src="resources/images/glasses-h1050.jpg" />
+            <img class="" src="resources/images/glasses-h1050.jpg" />
+            <img class="" src="resources/images/glasses-h1050.jpg" />
+            <img class="" src="resources/images/glasses-h1050.jpg" />
+            <img class="" src="resources/images/glasses-h1050.jpg" />
           </div>
-          <!-- <div class="flex"> -->
-            <div class="overlap">
-              <div class="overlap-group">          
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-                <img class="" src="resources/images/glasses-h1050.jpg" />
-              </div>
-            </div>
-          <!-- </div> -->
         </div>
-        <!-- section-container -->
-        <div class="section">
-          <div class="section-container">
-            <div class="section-item card-component">
-                <div class="card-img-frame">
-                  <div class="card-image">
-                    <img class="image-medium" src="resources/images/glasses-square-1050.jpg" />
-                  </div>
-                </div>
-                <!-- refactor index.html projects section component -->
-                <div class="card-text-frame">
-                  <div class="card-text">
-                    <h3>Title</h3> <!--projects-section-title-->
-                    <p><span>An end to end app packed with features</span></p>
-                    <p>A bespoke professional design.</p>
-                  </div>
-                  <div class="card-cta">
-                    <a class="card-button" href="case-study.html">Case study</a>
-                  </div>
-                </div>        
-              <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="section projects">
+      <div class="section-container">
+        <div class="section-item card-component">
+          <div class="card-img-frame">
+            <div class="card-image">
+              <img class="" src="resources/images/glasses-square-1050.jpg" />
             </div>
-            <div class="section-item card-component">
-                <div class="card-img-frame">
-                  <div class="card-image">
-                    <img class="image-medium" src="resources/images/glasses-square-1050.jpg" />
-                  </div>
-                </div>
-                <!-- refactor index.html projects section component -->
-                <div class="card-text-frame">
-                  <div class="card-text">
-                    <h3>Title</h3> <!--projects-section-title-->
-                    <p><span>An end to end app packed with features</span></p>
-                    <p>A bespoke professional design.</p>
-                  </div>
-                  <div class="card-cta">
-                    <a class="card-button" href="case-study.html">Case study</a>
-                  </div>
-                </div>        
-              <!-- </div> -->
-            </div>
-            <div class="section-item card-component">
-                <div class="card-img-frame">
-                  <div class="card-image">
-                    <img class="image-medium" src="resources/images/glasses-square-1050.jpg" />
-                  </div>
-                </div>
-                <!-- refactor index.html projects section component -->
-                <div class="card-text-frame">
-                  <div class="card-text">
-                    <h3>Title</h3> <!--projects-section-title-->
-                    <p><span>An end to end app packed with features</span></p>
-                    <p>A bespoke professional design.</p>
-                  </div>
-                  <div class="card-cta">
-                    <a class="card-button" href="case-study.html">Case study</a>
-                  </div>
-                </div>        
-              <!-- </div> -->
-            </div>
-            <!-- <div class="card-component">
-              <div class="card-img-frame">
-                <div class="card-image"><img class="image-medium" src="resources/images/glasses-square-1050.jpg" /></div>
-              </div>
-              refactor index.html projects section component
-              <div class="case-text-frame">
-                <div class="case-text">
-                  <h3>Title</h3> projects-section-title
-                  <p><span>An end to end app packed with features</span></p>
-                  <p>A bespoke professional design.</p>
-                </div>
-                <div class="case-cta">
-                  <a class="case-button" href="case-study.html">Case study</a>
-                </div>
-              </div>        
-            </div> -->
-            <!-- <div class="card-component">
-              <div class="card-img-frame">
-                <div class="card-image"><img class="image-medium" src="resources/images/glasses-square-1050.jpg" /></div>
-              </div>
-              refactor index.html projects section component
-              <div class="case-text-frame">
-                <div class="case-text">
-                  <h3>Title</h3> projects-section-title
-                  <p><span>An end to end app packed with features</span></p>
-                  <p>A bespoke professional design.</p>
-                </div>
-                <div class="case-cta">
-                  <a class="case-button" href="case-study.html">Case study</a>
-                </div>
-              </div>        
-            </div> -->
           </div>
-          
+          <div class="card-text-frame">
+            <div class="card-text">
+              <h3>Title</h3> 
+              <p><span>An end to end app packed with features</span></p>
+              <p>A bespoke professional design.</p>
+            </div>
+            <div class="cta">
+              <button class="cta-button projects-button"><a class="" href="case-study.html">Case study</a></button>
+            </div>
+          </div>        
         </div>
-
-        
-    <!-- </div> showcase closing tag -->
+        <div class="section-item card-component">
+          <div class="card-img-frame">
+            <div class="card-image">
+              <img class="" src="resources/images/glasses-square-1050.jpg" />
+            </div>
+          </div>
+          <div class="card-text-frame">
+            <div class="card-text">
+              <h3>Title</h3> <!--projects-section-title-->
+              <p><span>An end to end app packed with features</span></p>
+              <p>A bespoke professional design.</p>
+            </div>
+            <div class="cta">
+              <button class="cta-button projects-button"><a class="" href="case-study.html">Case study</a></button>
+            </div>
+          </div>        
+        </div>
+        <div class="section-item card-component">
+          <div class="card-img-frame">
+            <div class="card-image">
+              <img class="" src="resources/images/glasses-square-1050.jpg" />
+            </div>
+          </div>
+          <div class="card-text-frame">
+            <div class="card-text">
+              <h3>Title</h3> 
+              <p><span>An end to end app packed with features</span></p>
+              <p>A bespoke professional design.</p>
+            </div>
+            <div class="card-cta">
+              <a class="cta-button projects-button" href="case-study.html">Case study</a>
+            </div>
+          </div>        
+        </div>
+      </div>          
+    </div>
   </main>
 
   <footer>
@@ -396,9 +161,6 @@ family=Quicksand:wght@300;400;500;600;700
     </section>
   </footer>
 
-
-
-  <!--include external javascript file-->
   <script type="text/javascript" src='resources/js/main.js'></script>
  
 </body>
