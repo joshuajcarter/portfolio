@@ -58,7 +58,6 @@ h1, h2, h3, h4, h5,p, #home-link {
 
 p {
 	font-size: 1.25rem;
-	max-width: 80%;
 } 
 	
 img{
@@ -213,25 +212,26 @@ p.grid-item-title{
 	height: 100%;
 	object-fit: cover; 
 }
-.card-text-frame {
+.card-text {
 	/* border: 5px solid; */
 	height: 100%;
-	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	gap: 1.5rem;
+	padding: 1rem; 
+}
+
+.card-text p span {
+	font-weight: bold;
+}
+.card-text-frame {	
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	gap: 1.5rem;
-}
-.card-text {
-	height: 100%; 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly; 
-	gap: 1.5rem;
-}
-.card-text p span {
-	font-weight: bold;
+	gap: 1.5rem;	
 }
 
 /* button rules */
@@ -266,7 +266,6 @@ p.grid-item-title{
 	color: #ff9822;
 }
 
-
 @media screen and (min-width: 600px) {
 	.section-container-img {
 		max-width: 70%;
@@ -283,6 +282,7 @@ p.grid-item-title{
 	}
 	.card-component {
 		grid-template-columns: repeat(2, 1fr);
+		/* grid-template-columns: 1fr 1fr; */
 		grid-template-rows: repeat(1, 1fr);
 		gap: 0;
 	}
@@ -316,7 +316,7 @@ p.grid-item-title{
 		margin-left: 0;
 	}	
 	.card-text-frame {
-		padding: 2rem;
+		/* padding: 2rem; */
 	}	
 }
 
