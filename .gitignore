@@ -1,4 +1,6 @@
 .DS_Store
 .vscode/
+dist
 no-deploy/
+node_modules
 UnusedAssets.txt
