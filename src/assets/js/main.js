@@ -1,3 +1,6 @@
+import "../css/style.css";
+require.context("../images", false, /\.(png|jpg|jpeg|gif)$/);
+
 window.addEventListener("load", () => {
   ["#hero-make", "#hero-ideas", "#hero-happen"].forEach((id) => {
     const element = document.querySelector(id);
@@ -11,14 +14,14 @@ window.addEventListener("load", () => {
   const workLink = document.getElementById("work-link");
   const dropDown = document.getElementById("nav-dropdown");
   const letsTalk = document.querySelectorAll(".talk");
-  const caseCards = document.querySelectorAll(".card-component")
+  const caseCards = document.querySelectorAll(".card-component");
 
   console.log("menuButton:", menuButton);
   console.log("closeMenu:", closeMenu);
   console.log("workLink:", workLink);
   console.log("dropDown:", dropDown);
   console.log("letsTalk:", letsTalk);
-  console.log("caseCards:", caseCards)
+  console.log("caseCards:", caseCards);
 
   function showMenu() {
     if (menuButton) menuButton.classList.add("hide");
